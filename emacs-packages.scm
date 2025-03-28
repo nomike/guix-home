@@ -22,160 +22,154 @@
 
   (define-public emacs-packages
       (list
-          emacs
-          emacs-magit
-          emacs-org
-          emacs-vlf ; very large files
-          ; emacs-tuareg ; ocaml
-          emacs-yaml-mode
-          ; emacs-julia-mode ; uses yaml which hangs
-          ; emacs-julia-repl
-          ; emacs-julia-snail
-          ; emacs-inf-ruby
-          ; emacs-alchemist); Elixir
-          emacs-code-cells
-          emacs-password-generator
-          emacs-casual-calc
-          emacs-casual-dired
-          emacs-casual-info
-          emacs-aio
+          emacs ; The extensible, customizable, self-documenting text editor"
+          emacs-magit ; Emacs interface for the Git version control system
+          emacs-org ; Outline-based notes management and organizer
+          emacs-vlf ; View large files in Emacs
+          ; emacs-tuareg ; OCaml programming mode, REPL, debugger for Emacs
+          emacs-yaml-mode ; Major mode for editing YAML files
+          ; emacs-julia-mode ; Major mode for Julia
+          ; emacs-julia-repl ; Minor mode for interacting with a Julia REPL
+          ; emacs-julia-snail ; Development environment and REPL interaction package for Julia
+          ; emacs-inf-ruby ; Provides a REPL buffer connected to a Ruby subprocess in Emacs
+          ; emacs-alchemist; Elixir tooling integration into Emacs
+          emacs-code-cells ; Emacs utilities for code split into cells, including Jupyter notebooks
+          emacs-password-generator ; Generate passwords inside Emacs
+          emacs-casual-calc ; Transient-based porcelain for calc
+          emacs-casual-dired ; Transient-based porcelain for Dired
+          emacs-casual-info ; Transient-based porcelain for info reader
+          emacs-aio ; Async/Await for Emacs Lisp
           emacs-lsp-booster ; not working (package does not exist?)
-          emacs-undo-tree
-          ; emacs-page-break-lines ; superseded by emacs-form-feed (?)
-          emacs-form-feed
-          emacs-next-pgtk
-          emacs-paredit
-          emacs-evil-paredit
-          emacs-indent-bars
-          (emacs-spacious-padding-patch emacs-spacious-padding) ; spacing between windows
-          emacs-crdt
-          
-          emacs-git-email
-          emacs-diff-hl ; VC diff in the fringe
-          emacs-color-theme-solarized
-          emacs-dtrt-indent
-          emacs-slime-company
-          emacs-eval-in-repl-slime
-          emacs-pyvenv
+          emacs-undo-tree ; Emacs LSP performance booster
+          ; emacs-page-break-lines ; Display page breaks as tidy horizontal lines ; superseded by emacs-form-feed (?)
+          emacs-form-feed ; Display ^L glyphs as horizontal lines
+          emacs-next-pgtk ; Emacs text editor with pgtk frames
+          emacs-paredit ; Emacs minor mode for editing parentheses
+          emacs-evil-paredit ; Evil extension to integrate nicely with Paredit
+          emacs-indent-bars ; Highlight indentation with bars
+          (emacs-spacious-padding-patch emacs-spacious-padding) ; Increase the padding or spacing of frames and windows
+          emacs-crdt ; Real-time collaborative editing environment
+          emacs-git-email ; Format and send Git patches in Emacs
+          emacs-diff-hl ; Highlight uncommitted changes using VC
+          emacs-color-theme-solarized ; Solarized color scheme for Emacs
+          emacs-dtrt-indent ; Minor mode that guesses the indentation offset
+          emacs-slime-company ; SLIME completion backend for company-mode
+          emacs-eval-in-repl-slime ; Superior Lisp Interaction Mode for Emacs
+          emacs-pyvenv ; Python virtual environment interface for Emacs
           ;; For Lisp and Javascript; Note: emacs-sly is a fork
-          emacs-slime
-          emacs-eldoc
-          emacs-xref ; TODO: emacs-xref-union
-          emacs-sesman
-;                                         ;emacs-org ; org 9.7.11 is included in emacs
-;                                         ;emacs-org-element ; tree
-
-;                                         ;emacs-org-texlive-collection)
-          emacs-org-edna
-;                                         ; TODO: package: emacs-org-notify
-;                                         ; emacs-org-node)
-              emacs-org-super-links ; Create links with auto backlinks 
-;                                         ;emacs-org-roam)
-              emacs-org-ref ; Citations, cross-references and bibliographies in Org mode 
-              emacs-org-super-agenda ; Supercharged Org agenda 
-              emacs-org-timeblock ; Schedule your day visually, using timeblocking technique inside Emacs 
-              emacs-org-remark ; add notes to epub and websites
-              emacs-org-pomodoro ; Pomodoro technique for org-mode 
-              emacs-org-emms ; Play multimedia files from org-mode 
-              emacs-mu4e-dashboard ; Build your own dashboard for mu4e using org-mode 
-              emacs-emms ; The Emacs Multimedia System
-              emacs-comment-tags ; Minor mode to show comments which have tags like TODO 
-              emacs-embark ; Emacs Mini-Buffer Actions Rooted in Keymaps 
-              emacs-outline-indent ; Outline and code folding for indentation-based texts in Emacs 
-              emacs-rmsbolt ; Emacs viewer for compiler output 
+          emacs-slime ; Superior Lisp Interaction Mode for Emacs
+          emacs-eldoc ; Show function arglist or variable docstring in echo area
+          emacs-xref ; Cross-referencing commands ; TODO: emacs-xref-union
+          emacs-sesman ; Session manager for Emacs based IDEs
+          ; emacs-org-element ; tree
+          emacs-org-texlive-collection ; Basic TeX Live packages for Org mode LaTeX export'
+          emacs-org-edna ; Manage Org task dependencies
+          emacs-org-notify ; Notifications for Org-mode
+          emacs-org-node ; Non-hierarchical note-taking with Org-mode, faster thanorg-roam
+          emacs-org-super-links ; Create links with auto backlinks 
+          ; emacs-org-roam ; Non-hierarchical note-taking with Org mode
+          emacs-org-ref ; Citations, cross-references and bibliographies in Org mode 
+          emacs-org-super-agenda ; Supercharged Org agenda 
+          emacs-org-timeblock ; Schedule your day visually, using timeblocking technique inside Emacs 
+          emacs-org-remark ; add notes to epub and websites
+          emacs-org-pomodoro ; Pomodoro technique for org-mode 
+          emacs-org-emms ; Play multimedia files from org-mode 
+          emacs-mu4e-dashboard ; Build your own dashboard for mu4e using org-mode 
+          emacs-emms ; The Emacs Multimedia System
+          emacs-comment-tags ; Minor mode to show comments which have tags like TODO 
+          emacs-embark ; Emacs Mini-Buffer Actions Rooted in Keymaps 
+          emacs-outline-indent ; Outline and code folding for indentation-based texts in Emacs 
+          emacs-rmsbolt ; Emacs viewer for compiler output 
 ;               ;; Used by emacs-dap-mode
-              (patch2 emacs-lsp-treemacs) ; Integration between LSP mode and treemacs 
+          (patch2 emacs-lsp-treemacs) ; Integration between LSP mode and treemacs 
 ;               ;; Used by emacs-dap-mode
-              emacs-bui ; Buffer interface library for Emacs 
+          emacs-bui ; Buffer interface library for Emacs 
 ;               ;; Used by emacs-dap-mode (popup)
-              emacs-posframe ; Pop a posframe (a child frame) at point 
+          emacs-posframe ; Pop a posframe (a child frame) at point 
 
-              emacs-beacon ; Emacs minor mode creating a light that follows your cursor around 
-              emacs-bar-cursor ; Bar cursor shape 
-              emacs-wakib-keys ; Make C-c, C-v and C-x clipboard keys work reliably in Emacs 
+          emacs-beacon ; Emacs minor mode creating a light that follows your cursor around 
+          emacs-bar-cursor ; Bar cursor shape 
+          emacs-wakib-keys ; Make C-c, C-v and C-x clipboard keys work reliably in Emacs 
 ;               ;; Alternative: emacs-dape
-              (patch2 emacs-dap-mode) ; Emacs client/library for Debug Adapter Protocol 
-              (patch2 emacs-lsp-mode) ; Emacs client and library for the Language Server Protocol
-              (patch2 emacs-lsp-ui) ; User interface extensions for `lsp-mode'
+          (patch2 emacs-dap-mode) ; Emacs client/library for Debug Adapter Protocol 
+          (patch2 emacs-lsp-mode) ; Emacs client and library for the Language Server Protocol
+          (patch2 emacs-lsp-ui) ; User interface extensions for `lsp-mode'
 ;                                         ; doesn't work emacs-lsp-docker)
 ;                                         ; part of emacs since emacs 29 emacs-csharp-mode)
-              (patch2 emacs-ccls) ; Emacs support for the `ccls' language server ;  C LSP; conflicts with our patched dap-mode
-              (patch2 emacs-lsp-java) ; Java support for lsp-mode ; conflicts with our patched dap-mode
-              emacs-tramp ; Remote file editing package for Emacs ; I think that's part of emacs now
-              emacs-treemacs ; Emacs tree style file explorer
-              emacs-treemacs-extra ; Emacs tree style file explorer ; magit, projectile, tab-bar; but also all-the-icons, memoize, evil, persp-mode, perspective
-              emacs-treemacs-nerd-icons ; This package provides nerd-icons integration for treemacs.
-              ; emacs-magit-gerrit ; Magit plugin for Gerrit Code Review ; no longer maintained
-              emacs-projectile ; Manage and navigate projects in Emacs easily 
-              emacs-company ; Modular text completion framework
-              emacs-company-jedi ; Provides Python completion in `company-mode' 
-              (patch2 emacs-company-lsp) ; Completion for `lsp-mode' 
-              emacs-company-org-block ; Emacs `company-complete' for Org blocks ; snippets with "<"
-              emacs-capf-autosuggest ; `eshell' completion suggestions for Emacs 
-              emacs-flycheck ; On-the-fly syntax checking 
-              emacs-helm ; Incremental completion and selection narrowing framework for Emacs 
-              emacs-shackle ; Enforce rules for popups 
-              emacs-envrc ; Support for Direnv which operates buffer-locally 
-              ;; Understands guix.scm and manifest.scm natively
-              emacs-buffer-env ; Create buffer-local process environments 
-              emacs-flycheck-guile ; GNU Guile support for Flycheck
+          (patch2 emacs-ccls) ; Emacs support for the `ccls' language server ;  C LSP; conflicts with our patched dap-mode
+          (patch2 emacs-lsp-java) ; Java support for lsp-mode ; conflicts with our patched dap-mode
+          emacs-tramp ; Remote file editing package for Emacs ; I think that's part of emacs now
+          emacs-treemacs ; Emacs tree style file explorer
+          emacs-treemacs-extra ; Emacs tree style file explorer ; magit, projectile, tab-bar; but also all-the-icons, memoize, evil, persp-mode, perspective
+          emacs-treemacs-nerd-icons ; This package provides nerd-icons integration for treemacs.
+          ; emacs-magit-gerrit ; Magit plugin for Gerrit Code Review ; no longer maintained
+          emacs-projectile ; Manage and navigate projects in Emacs easily 
+          emacs-company ; Modular text completion framework
+          emacs-company-jedi ; Provides Python completion in `company-mode' 
+          (patch2 emacs-company-lsp) ; Completion for `lsp-mode' 
+          emacs-company-org-block ; Emacs `company-complete' for Org blocks ; snippets with "<"
+          emacs-capf-autosuggest ; `eshell' completion suggestions for Emacs 
+          emacs-flycheck ; On-the-fly syntax checking 
+          emacs-helm ; Incremental completion and selection narrowing framework for Emacs 
+          emacs-shackle ; Enforce rules for popups 
+          emacs-envrc ; Support for Direnv which operates buffer-locally 
+          ;; Understands guix.scm and manifest.scm natively
+          emacs-buffer-env ; Create buffer-local process environments 
+          emacs-flycheck-guile ; GNU Guile support for Flycheck
+          emacs-scad-mode ; Emacs major mode for editing editing OpenSCAD code 
+          emacs-geiser-guile ; Guile Scheme support for Geiser
+          emacs-parinfer-rust-mode ; Lisp structure editing mode leveraging Parinfer Rust
+                                    ;emacs-parinfer-mode ; Lisp structure editing mode
+          emacs-web-mode ; Major mode for editing web templates
+          emacs-git-timemachine ; Step through historic versions of Git-controlled files
+          emacs-markdown-mode ; Emacs Major mode for Markdown files
+          emacs-geiser ; Collection of Emacs modes for Scheme hacking
+          emacs-go-mode ; Go mode for Emacs
+          emacs-typescript-mode ; Emacs major mode for editing Typescript code
+          emacs-pkg-info ; Information about Emacs packages
+          ; emacs-flycheck-rust ; Rust/Cargo support for Flycheck
+          emacs-rust-mode ; Major Emacs mode for editing Rust source code
+          emacs-docker ; anage docker from Emacs
+          emacs-dired-launch ; emacs-dired-launch
 
-              emacs-scad-mode ; Emacs major mode for editing editing OpenSCAD code 
-
-;               emacs-geiser-guile
-;               emacs-parinfer-rust-mode
-;                                         ;emacs-parinfer-mode)
-;               emacs-web-mode
-;               emacs-git-timemachine
-;               emacs-markdown-mode
-;               emacs-geiser
-;               emacs-go-mode
-;               emacs-typescript-mode
-;               emacs-pkg-info
-;               emacs-flycheck-rust
-;               emacs-rust-mode
-;               emacs-docker
-;               emacs-dired-launch
-;                                         ;dvisvgm") ; TODO: Move that to manifest.scm of your project
-;                                         ; obsolete in favor of integrated tramp-container
-;                                         ;emacs-docker-tramp)
-;               emacs-eat
-; ;                                         ; statistics: R, Julia, and JAGS.
-; ;                                         ; FIXME emacs-ess
-
-;               python-jupyter-client ; required by emacs-jupyter (for no reason; why not just invoke "jupyter kernel"?)
-;               emacs-jupyter
-;               emacs-elixir-mode
-;                                         ; FIXME emacs-guix
-;               emacs-bluetooth
-;               emacs-osm
-;               emacs-erc-hl-nicks ; IRC nick coloring
-;               emacs-counsel
-;               emacs-counsel-tramp
-;               emacs-counsel-projectile
-;                                         ;emacs-counsel-jq)
-;                                         ;emacs-helm-projectile)
-;               emacs-company-jedi ; Python completion
-;               emacs-back-button
-;                                         ;emacs-wanderlust) ; email (POP3, IMAP and Maildir)
-;                                         ;I moved from wanderlust to mew because I find mew has better support for encryption, particularly S/MIME.
-;                                         ;emacs-mew)
-;                                         ; mu") ; maildir indexer, mu4e
-;               emacs-vertico
-;               emacs-consult
-;                                         ;(patch2 emacs-consult-lsp)) ; gcc 4.9 build failure
-;               emacs-consult-xdg-recent-files
-;                                         ;emacs-consult-org-roam)
-;               emacs-consult-flycheck
-;               emacs-marginalia
-;               emacs-orderless
-;               emacs-trashed
-;               emacs-qrencode
-;               emacs-forge
-;                                         ; Columns
-;               emacs-taxy-magit-section
-;               emacs-ghub
-;               emacs-github-review
+          emacs-chatgpt-shell ; ChatGPT and DALL-E Emacs shells and Org Babel libraries
+          ; dvisvgm ; Command-line utility for generating SVG from DVI, EPS and PDF files ; TODO: Move that to manifest.scm of your project
+          ; obsolete in favor of integrated tramp-container
+          ; emacs-docker-tramp ; TRAMP integration for docker containers
+          emacs-eat ; Terminal emulator in Emacs
+          python-jupyter-client ; Jupyter protocol implementation and client libraries ; required by emacs-jupyter (for no reason; why not just invoke "jupyter kernel"?)
+          emacs-jupyterv ; Emacs interface to communicate with Jupyter kernels
+          emacs-elixir-mode ; ajor mode for editing Elixir files
+          emacs-guix ; Emacs interface for GNU Guix
+          emacs-bluetooth ; Manage Bluetooth devices using Emacs
+          emacs-osmv; OpenStreetMap viewer for Emacs
+          emacs-erc-hl-nicks ; Nickname highlighting for Emacs ERC
+          emacs-counsel ; Various completion functions using Ivy
+          emacs-counsel-tramp ; Ivy interface for TRAMP
+          emacs-counsel-projectile ; Enhance Projectile with Ivy
+          ; emacs-counsel-jq ; Live preview jq queries using counsel
+          ; emacs-helm-projectile ; Helm integration for Projectile
+          emacs-company-jedi ; Provides Python completion in company-mode
+          emacs-back-button ; Visual navigation through mark rings in Emacs
+          ; emacs-wanderlust ; Yet Another Message Interface on Emacsen ; email (POP3, IMAP and Maildir)
+          ; (daym) I moved from wanderlust to mew because I find mew has better support for encryption, particularly S/MIME.
+          ; emacs-mew ; Emacs e-mail client
+          ; mu ; Quickly find emails ; maildir indexer, mu4e
+          emacs-vertico ; Vertical interactive completion
+          emacs-consult ; Emacs completion style that matches multiple regexps in any order
+          ; (patch2 emacs-consult-lsp)) ; (daym) gcc 4.9 build failure
+          emacs-consult-xdg-recent-files ; Include files used by other programs than Emacs in Consult
+          ; emacs-consult-org-roam ; Consult integration for Org Roam
+          emacs-consult-flycheck
+          emacs-marginalia
+          emacs-orderless
+          emacs-trashed
+          emacs-qrencode
+          emacs-forge
+                                    ; Columns
+          emacs-taxy-magit-section
+          emacs-ghub
+          emacs-github-review
 ;                                         ;emacs-svg-tag-mode)
 ;               ;; This one uses text styling and so makes the user's stuff more editable than svg-tag-mode
 ;               ;; Replaces org-bullets and org-superstar
