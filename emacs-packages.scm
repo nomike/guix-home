@@ -20,10 +20,6 @@
    (options->transformation `((with-patch . ,(string-append "emacs-spacious-padding="
                                                             "patches/emacs-spacious-padding.patch")))))
 
- (define (package-with-emacs-pgtk p)
-   p
-   )
-
   (define-public emacs-packages
       (list
           emacs
