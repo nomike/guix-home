@@ -160,90 +160,77 @@
           ; (patch2 emacs-consult-lsp)) ; (daym) gcc 4.9 build failure
           emacs-consult-xdg-recent-files ; Include files used by other programs than Emacs in Consult
           ; emacs-consult-org-roam ; Consult integration for Org Roam
-          emacs-consult-flycheck
-          emacs-marginalia
-          emacs-orderless
-          emacs-trashed
-          emacs-qrencode
-          emacs-forge
-                                    ; Columns
-          emacs-taxy-magit-section
-          emacs-ghub
-          emacs-github-review
-;                                         ;emacs-svg-tag-mode)
-;               ;; This one uses text styling and so makes the user's stuff more editable than svg-tag-mode
-;               ;; Replaces org-bullets and org-superstar
-;               emacs-org-modern
-;               emacs-ob-async
-;               emacs-mixed-pitch
-;               ;; Used by emacs-doom-modeline. Requires nerd font. Can install it via M-x nerd-icons-install-fonts to ~/.local/share/fonts
-;               ;; Don't forget to M-x customize-variable lsp-treemacs-theme to "Iconless" without quotes. It will show icons from the font anyway.
-;               emacs-nerd-icons
-;                                         ;emacs-doom-modeline)
-;               emacs-pulsar
-;               emacs-rainbow-delimiters
-;               ;; What's the difference to which-key ??
-;               emacs-discover-my-major
-;               emacs-which-key
-;               emacs-auctex
-;               emacs-company-auctex
-;               emacs-latex-extra
-;               emacs-adoc-mode
-;               emacs-tempel
-;               emacs-debbugs
-;               emacs-inheritenv
-;               ;; Alternative: emacs-reformatter
-;                                         ;emacs-format-all-the-code") ; can't because inheritenv.
-;               emacs-format-all-the-code
+          emacs-consult-flycheck ; Consult integration for Flycheck
+          emacs-marginalia ; Marginalia in the minibuffer completions 
+          emacs-orderless ; Emacs completion style that matches multiple regexps in any order 
+          emacs-trashed ; View and edit system trash can in Emacs 
+          emacs-qrencode ; QRCode encoder for Emacs in pure elisp 
+          emacs-forge ; Access Git forges from Magit 
+          emacs-taxy-magit-section ; View Taxy structs in a Magit Section buffer 
+          emacs-ghub ; Emacs client libraries for the APIs of various Git forges 
+          emacs-github-review ; Review GitHub pull requests within Emacs 
+          ; emacs-svg-tag-mode ; Replace keywords with SVG tags ; replaced by emacs-org-modern
+          emacs-org-modern ; Modern Org style ; (daym) This one uses text styling and so makes the user's stuff more editable than svg-tag-mode ; (daym) Replaces org-bullets and org-superstar
+          emacs-ob-async ; Asynchronous src_block execution for org-babel 
+          emacs-mixed-pitch ; Mix variable- and fixed-pitch fonts in the same Emacs buffer 
+          ; (daym) Used by emacs-doom-modeline. Requires nerd font. Can install it via M-x nerd-icons-install-fonts to ~/.local/share/fonts
+          ; (daym) Don't forget to M-x customize-variable lsp-treemacs-theme to "Iconless" without quotes. It will show icons from the font anyway.
+          emacs-nerd-icons ; Library for easily using nerd font icons inside Emacs 
+          emacs-doom-modeline ; Fancy and fast mode-line inspired by minimalism design 
+          emacs-pulsar ; Pulse highlight line on demand or after running select functions 
+          emacs-rainbow-delimiters ; Highlight brackets according to their depth 
+          ; (daym) What's the difference to which-key ??
+          emacs-discover-my-major ; Discover key bindings for the current Emacs major mode 
+          emacs-which-key ; Display available keybindings in popup 
+          emacs-auctex ; Integrated environment for TeX 
+          emacs-company-auctex ; Completion for `AUCTeX' 
+          emacs-latex-extra ; Usability improvements for LaTeX mode 
+          emacs-adoc-mode ; AsciiDoc mode for Emacs 
+          emacs-tempel ; Simple templates for Emacs 
+          emacs-debbugs ; Access the Debbugs bug tracker in Emacs 
+          emacs-inheritenv ; Emacs temp buffers inherit buffer-local environment variables 
+          ; (daym) Alternative: emacs-reformatter
+          emacs-format-all-the-code ; Auto-format any source code
+          ; (daym) For swank-js to use.  But it doesn't work with multiple major modes yet. TODO: css-mode;
+          emacs-js2-mode ; Improved JavaScript editing mode for Emacs 
+          ; (daym) typescript mode done by combobulate
+          ; (daym) Allows the user to see/edit a range of a buffer in another buffer.
+          emacs-edit-indirect ; Edit regions in separate buffers 
+          ; (daym) This one works with multiple major modes (and thus with Vue JS, mmm)
+          ; (daym) shipped by default emacs-js-mode
+          emacs-mmm-mode ; Allow multiple major modes in an Emacs buffer 
+          ; (daym) For Clojure. Supports light table via M-x cider-enlighten-mode
+          emacs-cider ; Clojure development environment for Emacs 
+          emacs-vala-mode ; Helm interface to Clojure's CIDER 
+          ; (daym) Shows number of search results in status bar
+          emacs-anzu ; Show number of matches in mode-line while searching 
+          emacs-dired-rsync ; Support for rsync from Emacs dired buffers 
+          emacs-dockerfile-mode ; Major mode for editing Dockerfile 
+          emacs-emacsql ; Emacs high-level SQL database front-end 
+          ; emacs-helm-cider ; Helm interface to Clojure's CIDER 
+          ; (daym) TODO emacs-graphviz-dot-mode
+          emacs-jinja2-mode ; Major mode for jinja2 
+          emacs-org-fc ; Spaced repetition system for Emacs Org mode 
+          emacs-org-vcard ; Org mode support for vCard export and import 
+          emacs-vundo ; Visualize the undo tree 
+          emacs-wttrin ; Frontend for weather web service `wttr.in' 
+          emacs-org-re-reveal ; Build HTML presentations with reveal.js from Org source files 
+          emacs-frames-only-mode ; Use frames instead of Emacs windows 
+          emacs-popper ; Emacs minor-mode to summon and dismiss buffers easily 
+          ; (daym) TODO avy
+          ; (daym) doesn't native compile: emacs-mastodon
+          emacs-elfeed ; Atom/RSS feed reader for Emacs 
+          emacs-elfeed-score ; Gnus-style scoring for Elfeed 
+          emacs-elfeed-org ; Configure Elfeed with an Org-mode file 
+          emacs-fortran-tags ; Emacs plugin for source code indexing of modern Fortran 
+          ; (daym) or celluloid for gtk
+          emacs-mpv ; Control MPV for easy note taking 
+          emacs-empv ; Emacs multimedia player, media library manager, YouTube frontend 
+          ; emacs-ytel ; Youtube front-end for Emacs 
+          emacs-nov-el ; Major mode for reading EPUBs in Emacs 
+          dvisvgm ; Command-line utility for generating SVG from DVI, EPS and PDF files 
+          emacs-ztree ; Directory tree comparison mode for Emacs 
 
-;               ;; For swank-js to use.  But it doesn't work with multiple major modes yet. TODO: css-mode;
-;               emacs-js2-mode
-;                                         ; typescript mode done by combobulate
-;               ;; Allows the user to see/edit a range of a buffer in another buffer.
-;               emacs-edit-indirect
-;               ;; This one works with multiple major modes (and thus with Vue JS, mmm)
-;                                         ; shipped by default emacs-js-mode)
-;               ;; Allows multiple major modes to coexist in one buffer
-;               emacs-mmm-mode
-;               ;; For Clojure. Supports light table via M-x cider-enlighten-mode
-;               emacs-cider
-;               emacs-vala-mode
-;               ;; Shows number of search results in status bar
-;               emacs-anzu
-;               emacs-dired-rsync
-;               emacs-dockerfile-mode
-;               emacs-emacsql
-;                                         ;emacs-helm-cider)
-;                                         ; TODO emacs-graphviz-dot-mode)
-;               emacs-jinja2-mode
-;               ;; Spaced repetition in org mode.
-;               emacs-org-fc
-;               ;; vcard vcf
-;               emacs-org-vcard
-;               ;; Visual undo tree.
-;               emacs-vundo
-;               ;; Weather info
-;               emacs-wttrin
-;               ;; org->HTML export
-;               emacs-org-re-reveal
-;                                         ; unused
-;               emacs-frames-only-mode
-;                                         ; https://github.com/karthink/popper special-case popup windows in general.
-;               emacs-popper
-;                                         ; TODO avy
-;                                         ; doesn't native compile: emacs-mastodon
-
-;               emacs-elfeed ; RSS/Atom
-;               emacs-elfeed-score
-;               emacs-elfeed-org ; subscriptions in org mode
-;               emacs-fortran-tags
-;                                         ; or celluloid for gtk
-;               emacs-mpv
-;               emacs-empv ; ?
-;                                         ; emacs-ytel
-;               emacs-nov-el ; for epub
-;               dvisvgm ; for epub
-;               emacs-ztree ; directory diff
 ;               ;; Guile IDE
 ;               (specification->package "emacs-arei")
 ;               (specification->package "guile-ares-rs")
