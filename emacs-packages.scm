@@ -39,9 +39,9 @@
           emacs-casual-dired ; Transient-based porcelain for Dired
           emacs-casual-info ; Transient-based porcelain for info reader
           emacs-aio ; Async/Await for Emacs Lisp
-          emacs-lsp-booster ; not working (package does not exist?)
+          emacs-lsp-booster ; Emacs LSP performance booster
           emacs-undo-tree ; Emacs LSP performance booster
-          ; emacs-page-break-lines ; Display page breaks as tidy horizontal lines ; superseded by emacs-form-feed (?)
+          ; emacs-page-break-lines ; Display page breaks as tidy horizontal lines ; (daym) superseded by emacs-form-feed (?)
           emacs-form-feed ; Display ^L glyphs as horizontal lines
           emacs-next-pgtk ; Emacs text editor with pgtk frames
           emacs-paredit ; Emacs minor mode for editing parentheses
@@ -61,11 +61,11 @@
           emacs-eldoc ; Show function arglist or variable docstring in echo area
           emacs-xref ; Cross-referencing commands ; TODO: emacs-xref-union
           emacs-sesman ; Session manager for Emacs based IDEs
-          ; emacs-org-element ; tree
+          ; emacs-org-element ; Seems to no longer exist ; (daym) tree
           emacs-org-texlive-collection ; Basic TeX Live packages for Org mode LaTeX export'
           emacs-org-edna ; Manage Org task dependencies
           emacs-org-notify ; Notifications for Org-mode
-          emacs-org-node ; Non-hierarchical note-taking with Org-mode, faster thanorg-roam
+          emacs-org-node ; Non-hierarchical note-taking with Org-mode, faster than org-roam
           emacs-org-super-links ; Create links with auto backlinks 
           ; emacs-org-roam ; Non-hierarchical note-taking with Org mode
           emacs-org-ref ; Citations, cross-references and bibliographies in Org mode 
@@ -80,27 +80,26 @@
           emacs-embark ; Emacs Mini-Buffer Actions Rooted in Keymaps 
           emacs-outline-indent ; Outline and code folding for indentation-based texts in Emacs 
           emacs-rmsbolt ; Emacs viewer for compiler output 
-;               ;; Used by emacs-dap-mode
+;               ; (daym) Used by emacs-dap-mode
           (patch2 emacs-lsp-treemacs) ; Integration between LSP mode and treemacs 
-;               ;; Used by emacs-dap-mode
+;               ; (daym) Used by emacs-dap-mode
           emacs-bui ; Buffer interface library for Emacs 
-;               ;; Used by emacs-dap-mode (popup)
+;               ; (daym) Used by emacs-dap-mode (popup)
           emacs-posframe ; Pop a posframe (a child frame) at point 
-
           emacs-beacon ; Emacs minor mode creating a light that follows your cursor around 
           emacs-bar-cursor ; Bar cursor shape 
           emacs-wakib-keys ; Make C-c, C-v and C-x clipboard keys work reliably in Emacs 
-;               ;; Alternative: emacs-dape
+;               ; (daym) Alternative: emacs-dape
           (patch2 emacs-dap-mode) ; Emacs client/library for Debug Adapter Protocol 
           (patch2 emacs-lsp-mode) ; Emacs client and library for the Language Server Protocol
           (patch2 emacs-lsp-ui) ; User interface extensions for `lsp-mode'
-;                                         ; doesn't work emacs-lsp-docker)
-;                                         ; part of emacs since emacs 29 emacs-csharp-mode)
+;                                         ; (daym) doesn't work emacs-lsp-docker
+;                                         ; (daym) part of emacs since emacs 29 emacs-csharp-mode
           (patch2 emacs-ccls) ; Emacs support for the `ccls' language server ;  C LSP; conflicts with our patched dap-mode
-          (patch2 emacs-lsp-java) ; Java support for lsp-mode ; conflicts with our patched dap-mode
-          emacs-tramp ; Remote file editing package for Emacs ; I think that's part of emacs now
+          (patch2 emacs-lsp-java) ; Java support for lsp-mode ; (daym) conflicts with our patched dap-mode
+          emacs-tramp ; Remote file editing package for Emacs ; (daym) I think that's part of emacs now
           emacs-treemacs ; Emacs tree style file explorer
-          emacs-treemacs-extra ; Emacs tree style file explorer ; magit, projectile, tab-bar; but also all-the-icons, memoize, evil, persp-mode, perspective
+          emacs-treemacs-extra ; Emacs tree style file explorer ; (daym)  magit, projectile, tab-bar; but also all-the-icons, memoize, evil, persp-mode, perspective
           emacs-treemacs-nerd-icons ; This package provides nerd-icons integration for treemacs.
           ; emacs-magit-gerrit ; Magit plugin for Gerrit Code Review ; no longer maintained
           emacs-projectile ; Manage and navigate projects in Emacs easily 
@@ -113,13 +112,13 @@
           emacs-helm ; Incremental completion and selection narrowing framework for Emacs 
           emacs-shackle ; Enforce rules for popups 
           emacs-envrc ; Support for Direnv which operates buffer-locally 
-          ;; Understands guix.scm and manifest.scm natively
+          ; (daym) Understands guix.scm and manifest.scm natively
           emacs-buffer-env ; Create buffer-local process environments 
           emacs-flycheck-guile ; GNU Guile support for Flycheck
           emacs-scad-mode ; Emacs major mode for editing editing OpenSCAD code 
           emacs-geiser-guile ; Guile Scheme support for Geiser
           emacs-parinfer-rust-mode ; Lisp structure editing mode leveraging Parinfer Rust
-                                    ;emacs-parinfer-mode ; Lisp structure editing mode
+          ;emacs-parinfer-mode ; Lisp structure editing mode
           emacs-web-mode ; Major mode for editing web templates
           emacs-git-timemachine ; Step through historic versions of Git-controlled files
           emacs-markdown-mode ; Emacs Major mode for Markdown files
@@ -131,13 +130,12 @@
           emacs-rust-mode ; Major Emacs mode for editing Rust source code
           emacs-docker ; anage docker from Emacs
           emacs-dired-launch ; emacs-dired-launch
-
           emacs-chatgpt-shell ; ChatGPT and DALL-E Emacs shells and Org Babel libraries
-          ; dvisvgm ; Command-line utility for generating SVG from DVI, EPS and PDF files ; TODO: Move that to manifest.scm of your project
-          ; obsolete in favor of integrated tramp-container
+          ; dvisvgm ; Command-line utility for generating SVG from DVI, EPS and PDF files ; (daym) TODO: Move that to manifest.scm of your project
+          ; (daym) obsolete in favor of integrated tramp-container
           ; emacs-docker-tramp ; TRAMP integration for docker containers
           emacs-eat ; Terminal emulator in Emacs
-          python-jupyter-client ; Jupyter protocol implementation and client libraries ; required by emacs-jupyter (for no reason; why not just invoke "jupyter kernel"?)
+          python-jupyter-client ; Jupyter protocol implementation and client libraries ; (daym) required by emacs-jupyter (for no reason; why not just invoke "jupyter kernel"?)
           emacs-jupyterv ; Emacs interface to communicate with Jupyter kernels
           emacs-elixir-mode ; ajor mode for editing Elixir files
           emacs-guix ; Emacs interface for GNU Guix
@@ -151,10 +149,10 @@
           ; emacs-helm-projectile ; Helm integration for Projectile
           emacs-company-jedi ; Provides Python completion in company-mode
           emacs-back-button ; Visual navigation through mark rings in Emacs
-          ; emacs-wanderlust ; Yet Another Message Interface on Emacsen ; email (POP3, IMAP and Maildir)
+          ; emacs-wanderlust ; Yet Another Message Interface on Emacsen ; (daym) email (POP3, IMAP and Maildir)
           ; (daym) I moved from wanderlust to mew because I find mew has better support for encryption, particularly S/MIME.
           ; emacs-mew ; Emacs e-mail client
-          ; mu ; Quickly find emails ; maildir indexer, mu4e
+          ; mu ; Quickly find emails ; (daym) maildir indexer, mu4e
           emacs-vertico ; Vertical interactive completion
           emacs-consult ; Emacs completion style that matches multiple regexps in any order
           ; (patch2 emacs-consult-lsp)) ; (daym) gcc 4.9 build failure
@@ -231,67 +229,70 @@
           dvisvgm ; Command-line utility for generating SVG from DVI, EPS and PDF files 
           emacs-ztree ; Directory tree comparison mode for Emacs 
 
-;               ;; Guile IDE
-;               (specification->package "emacs-arei")
-;               (specification->package "guile-ares-rs")
-;                                         ; I adapt it (package-with-emacs-pgtk (specification->package "emacs-combobulate"))
-;                                         ; FIXME https://github.com/mclear-tools/consult-notes
-;                                         ; and then (consult-notes-org-roam-mode)
-;                                         ; HELM!?
-;                                         ;emacs-consult-notmuch
-;                                         ;emacs-consult-yasnippet
-;                                         ;emacs-consult-bibtex
-;                                         ;emacs-consult-dir
-;                                         ; Ivy[built-in]
-;                                         ; company-mode
-;                                         ; consult: Either use the default completion UI or ensure that exactly one of vertico-mode, mct-mode, or icomplete-mode is enabled. The unsupported modes selectrum-mode, ivy-mode, helm-mode, ido-mode and ido-ubiquitous-mode must be disabled.
-;                                         ; emacs vertico uses built-in completion; better than helm
-;                                         ;(let ((base (specification->package "mogan")))
-;                                         ;          (package (inherit base)
-;                                         ;            (inputs
-;                                         ;             (modify-inputs (package-inputs base)
-;                                         ;                            ;(prepend qtwayland-5)
-;                                         ;                            ))))
+          ; (daym) Guile IDE
+          emacs-arei ; Asynchronous Reliable Extensible IDE 
+          guile-ares-rs ; Asynchronous Reliable Extensible Sleek RPC Server for Guile 
+          tree-sitter-tlaplus ; Tree-sitter TLA+ grammar 
+          emacs-org-sticky-header ; Always show current org header line 
+          pandoc ; Conversion between markup formats
+          emacs-pandoc-mode ; Minor mode for interacting with Pandoc 
+          emacs-ox-pandoc ; Org exporter for Pandoc 
+          emacs-org-pandoc-import ; Read and edit non-Org file types in Org 
+          emacs-org-auto-tangle ; Automatically tangle code blocks on save 
+          emacs-howm ; Note-taking tool for Emacs 
+          emacs-pdf-tools ; 
 
-;               ;; Scientist.
-;                                         ; (specification->package "texmacs-guile3")
-;                                         ; (package-with-emacs-pgtk (specification->package "emacs-zotxt"))
-;                                         ; (specification->package "zotero")
 
-; ;;; Theorem Proving
 
-;                                         ;(specification->package "agda")
-;                                         ;(specification->package "lean") ; used by Terence Tao
-;                                         ;(specification->package "tla2tools")
-;               (specification->package "tree-sitter-tlaplus")
+                                        ; I adapt it (package-with-emacs-pgtk (specification->package "emacs-combobulate"))
+                                        ; FIXME https://github.com/mclear-tools/consult-notes
+                                        ; and then (consult-notes-org-roam-mode)
+                                        ; HELM!?
+                                        ;emacs-consult-notmuch
+                                        ;emacs-consult-yasnippet
+                                        ;emacs-consult-bibtex
+                                        ;emacs-consult-dir
+                                        ; Ivy[built-in]
+                                        ; company-mode
+                                        ; consult: Either use the default completion UI or ensure that exactly one of vertico-mode, mct-mode, or icomplete-mode is enabled. The unsupported modes selectrum-mode, ivy-mode, helm-mode, ido-mode and ido-ubiquitous-mode must be disabled.
+                                        ; emacs vertico uses built-in completion; better than helm
+                                        ;(let ((base (specification->package "mogan")))
+                                        ;          (package (inherit base)
+                                        ;            (inputs
+                                        ;             (modify-inputs (package-inputs base)
+                                        ;                            ;(prepend qtwayland-5)
+                                        ;                            ))))
 
-; ;;; Learning
+              ;; Scientist.
+                                        ; (specification->package "texmacs-guile3")
+                                        ; (package-with-emacs-pgtk (specification->package "emacs-zotxt"))
+                                        ; (specification->package "zotero")
+
+;;; Theorem Proving
+
+                                        ;(specification->package "agda")
+                                        ;(specification->package "lean") ; used by Terence Tao
+                                        ;(specification->package "tla2tools")
+
+;;; Learning
             
-;                                         ; (specification->package "anki")
-;               ;; One of the problems with one-way sync/extract from org-mode files to Anki database is losing out the context (imagine notes from a technical books).
-;               ;; I use org-drill in combination with org-sticky-header, which show the path of headings to that particular node.
-;               ;; Normally in Anki, this requires to add some extra descriptions or tags for this purpose. In org-mode, we get this for free.
-;               ;; But on the other hand, org-drill will fill your org file with scheduling and metadata drawers.
-;               ;; Another drawback with org-drill is it manages schedules for one "card" per heading, hence cloze items are not scheduled individually.
-;               ;; So, either you remember entirely "Alfred North Whitehead wrote [Principia Mathematica] in [1910]" or not at all.
-;               ;; In Anki, not only the book title "[Principia Mathematica]" and the written year "[1910]" are tested separately (same as org-drill),
-;               ;; but also scheduled/scored separately too (where org-drill falls short).
-;               ;; Use both, org-drill mostly for books, Anki for "standalone" facts.
-;                                         ; (package-with-emacs-pgtk (specification->package "emacs-anki-editor"))
-;                                         ; (package-with-emacs-pgtk (specification->package "emacs-gnosis"))
-;               ;; https://github.com/louietan/anki-editor
-;                                         ; (package-with-emacs-pgtk (specification->package "emacs-org-drill"))
-;               (specification->package "emacs-org-sticky-header")
-;                                         ; similar: (package-with-emacs-pgtk (specification->package "emacs-gnosis"))
+                                        ; (specification->package "anki")
+              ;; One of the problems with one-way sync/extract from org-mode files to Anki database is losing out the context (imagine notes from a technical books).
+              ;; I use org-drill in combination with org-sticky-header, which show the path of headings to that particular node.
+              ;; Normally in Anki, this requires to add some extra descriptions or tags for this purpose. In org-mode, we get this for free.
+              ;; But on the other hand, org-drill will fill your org file with scheduling and metadata drawers.
+              ;; Another drawback with org-drill is it manages schedules for one "card" per heading, hence cloze items are not scheduled individually.
+              ;; So, either you remember entirely "Alfred North Whitehead wrote [Principia Mathematica] in [1910]" or not at all.
+              ;; In Anki, not only the book title "[Principia Mathematica]" and the written year "[1910]" are tested separately (same as org-drill),
+              ;; but also scheduled/scored separately too (where org-drill falls short).
+              ;; Use both, org-drill mostly for books, Anki for "standalone" facts.
+                                        ; (package-with-emacs-pgtk (specification->package "emacs-anki-editor"))
+                                        ; (package-with-emacs-pgtk (specification->package "emacs-gnosis"))
+              ;; https://github.com/louietan/anki-editor
+                                        ; (package-with-emacs-pgtk (specification->package "emacs-org-drill"))
+              
+                                        ; similar: (package-with-emacs-pgtk (specification->package "emacs-gnosis"))
 
-;               (specification->package "pandoc")
-;               (specification->package "emacs-pandoc-mode")
-;               (specification->package "emacs-ox-pandoc")
-;               (specification->package "emacs-org-pandoc-import")
-;               (specification->package "emacs-org-auto-tangle")
-;               (specification->package "emacs-howm") ; minor mode for wiki
-
-;               (specification->package "emacs-pdf-tools")
 
     )
   )
