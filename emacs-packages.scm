@@ -1,16 +1,19 @@
   (define-module (emacs-packages)
     #:use-module (gnu home)
     #:use-module (gnu packages)
+    #:use-module (gnu packages emacs-xyz)
+    #:use-module (gnu packages emacs)
+    #:use-module (gnu packages engineering)
+    #:use-module (gnu packages guile-xyz)
+    #:use-module (gnu packages haskell-xyz)
+    #:use-module (gnu packages python-xyz) ; python-black
+    #:use-module (gnu packages rust-apps)
+    #:use-module (gnu packages tex)
+    #:use-module (gnu packages tree-sitter)
+    #:use-module (gnu packages version-control)
     #:use-module (gnu services)
     #:use-module (guix transformations)
-    #:use-module (gnu packages emacs)
-    #:use-module (gnu packages tex)
-    #:use-module (gnu packages rust-apps)
-    #:use-module (gnu packages version-control)
-    #:use-module (gnu packages emacs-xyz)
-    #:use-module (gnu packages engineering)
-    #:use-module (gnu packages python-xyz) ; python-black
-    #:export (emacs-packages))  ; Explicitly export the emp variable
+    #:export (emacs-packages))
 
  (define patch2
    (options->transformation `((with-patch . ,(string-append "emacs-lsp-mode="
