@@ -243,7 +243,7 @@
           emacs-org-pandoc-import ; Read and edit non-Org file types in Org 
           emacs-org-auto-tangle ; Automatically tangle code blocks on save 
           emacs-howm ; Note-taking tool for Emacs 
-          emacs-pdf-tools ; 
+          emacs-pdf-tools ; Emacs support library for PDF files 
 
 
 
