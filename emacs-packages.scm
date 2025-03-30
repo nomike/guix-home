@@ -136,11 +136,11 @@
           ; emacs-docker-tramp ; TRAMP integration for docker containers
           emacs-eat ; Terminal emulator in Emacs
           python-jupyter-client ; Jupyter protocol implementation and client libraries ; (daym) required by emacs-jupyter (for no reason; why not just invoke "jupyter kernel"?)
-          emacs-jupyterv ; Emacs interface to communicate with Jupyter kernels
+          emacs-jupyter ; Emacs interface to communicate with Jupyter kernels
           emacs-elixir-mode ; ajor mode for editing Elixir files
           emacs-guix ; Emacs interface for GNU Guix
           emacs-bluetooth ; Manage Bluetooth devices using Emacs
-          emacs-osmv; OpenStreetMap viewer for Emacs
+          emacs-osm; OpenStreetMap viewer for Emacs
           emacs-erc-hl-nicks ; Nickname highlighting for Emacs ERC
           emacs-counsel ; Various completion functions using Ivy
           emacs-counsel-tramp ; Ivy interface for TRAMP
