@@ -1,13 +1,12 @@
 (define-module (home-config)
   #:use-module (gnu home)
-  #:use-module (gnu packages)
-  #:use-module (gnu services)
-  #:use-module (emacs-packages))
+  #:use-module (roles scrooge)
+  )
 
 (home-environment
   (packages
     (append
-        emacs-packages
+        scrooge-packages
     )
   )
 )

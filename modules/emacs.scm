@@ -1,4 +1,4 @@
-  (define-module (emacs-packages)
+  (define-module (modules emacs)
     #:use-module (gnu home)
     #:use-module (gnu packages)
     #:use-module (gnu services)
