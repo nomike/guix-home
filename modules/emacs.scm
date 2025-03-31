@@ -17,7 +17,7 @@
   (append
     (specifications->packages
       (list
-        "emacs" ; The extensible, customizable, self-documenting text editor"
+        "emacs-pgtk" ; This Emacs build implements graphical UI purely in terms of GTK.
         "emacs-magit" ; Emacs interface for the Git version control system
         "emacs-org" ; Outline-based notes management and organizer
         "emacs-vlf" ; View large files in Emacs
