@@ -19,6 +19,7 @@
       (list
         "emacs-pgtk" ; This Emacs build implements graphical UI purely in terms of GTK.
         "emacs-magit" ; Emacs interface for the Git version control system
+        "emacs-multiple-cursors" ; Multiple cursors for Emacs
         "emacs-org" ; Outline-based notes management and organizer
         "emacs-vlf" ; View large files in Emacs
         ; "emacs-tuareg" ; OCaml programming mode, REPL, debugger for Emacs
