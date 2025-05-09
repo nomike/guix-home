@@ -1,20 +1,86 @@
   (define-module (modules emacs)
     #:use-module (gnu home)
     #:use-module (gnu packages)
+    #:use-module (guix build-system emacs)
+    #:use-module (guix packages)
+    #:use-module (guix gexp)
+    #:use-module (gnu packages emacs)
     #:use-module (gnu services)
     #:use-module (guix transformations)
     #:export (emacs-packages))
 
- (define patch2
-   (options->transformation `((with-patch . ,(string-append "emacs-lsp-mode="
-                                                            "patches/lsp-mode.patch")))))
+(define emacs-guix
+        (specification->package "emacs-guix"))
 
- (define emacs-spacious-padding-patch
-   (options->transformation `((with-patch . ,(string-append "emacs-spacious-padding="
-                                                            "patches/emacs-spacious-padding.patch")))))
+(define-public emacs-guix-minimal
+  (package
+    (inherit emacs-guix)
+    (build-system emacs-build-system)
+    (native-inputs '())
+    (inputs '())
+    (propagated-inputs '())
+    (arguments
+     (list
+      #:include ''("\
+^guix-(auto-mode|build-log|derivation|env-var|prettify|scheme|utils)\\.el")
+      #:modules '((guix build emacs-build-system)
+                  (guix build utils)
+                  (srfi srfi-26)
+                  (srfi srfi-71)
+                  (ice-9 regex)
+                  (ice-9 textual-ports))
+      #:phases
+      #~(modify-phases %standard-phases
+          (add-after 'unpack 'patch-source
+            (lambda _
+              (chdir "elisp")
+              (let* ((all (call-with-input-file "guix-utils.el"
+                            get-string-all))
+                     (match-str
+                      (lambda (from to base)
+                        (let ((res (string-match
+                                    (string-append "(" from ".*)" to)
+                                    base)))
+                          (values (and res (match:substring res 1))
+                                  (match:suffix res)))))
+                     (pprint rest (match-str
+                                   "\\(cl-defun guix-pretty-print-buffer"
+                                   "\\(defun guix-pretty-print-file"
+                                   all))
+                     (search rest (match-str
+                                  "\\(defmacro guix-while-search"
+                                   "\\(defmacro guix-while-null"
+                                   rest)))
+                (substitute* "guix-build-log.el"
+                 (("guix-find-file-or-url") "find-file-existing"))
+                (substitute* "guix-derivation.el"
+                  (("guix-find-file") "find-file-existing"))
+                (call-with-output-file "guix-utils.el"
+                  (lambda (port)
+                    (display "(require 'cl-lib)\n\n" port)
+                    (for-each
+                     (cut display <> port)
+                     (list pprint search
+                           (match-str ";;; Fontification" ";;; Diff" rest)))
+                    (display "(provide 'guix-utils)" port)))))))))
+    (description
+     (string-append (package-description emacs-guix) "
+
+Note: This is a minimalist variant of emacs-guix, with simply
+file prettification."))))
+
+(define patch2
+  (options->transformation `((with-patch . ,(string-append "emacs-lsp-mode="
+                                                           "patches/lsp-mode.patch")))))
+
+(define emacs-spacious-padding-patch
+  (options->transformation `((with-patch . ,(string-append "emacs-spacious-padding="
+                                                           "patches/emacs-spacious-padding.patch")))))
 
 (define-public emacs-packages
-  (append
+  (append (list
+      emacs-guix-minimal
+    )
     (specifications->packages
       (list
         "emacs-pgtk" ; This Emacs build implements graphical UI purely in terms of GTK.
@@ -101,6 +167,7 @@
         "emacs-buffer-env" ; Create buffer-local process environments 
         "emacs-flycheck-guile" ; GNU Guile support for Flycheck
         "emacs-scad-mode" ; Emacs major mode for editing editing OpenSCAD code 
+        "scad-dbus" ; Control OpenSCAD from Emacs using D-Bus
         "emacs-geiser-guile" ; Guile Scheme support for Geiser
         "emacs-parinfer-rust-mode" ; Lisp structure editing mode leveraging Parinfer Rust
         ; "emacs-parinfer-mode" ; Lisp structure editing mode
@@ -120,10 +187,11 @@
         ; (daym) obsolete in favor of integrated tramp-container
         ; "emacs-docker-tramp" ; TRAMP integration for docker containers
         "emacs-eat" ; Terminal emulator in Emacs
+        "emacs-gptel" ; GPTel is a simple ChatGPT client for Emacs
         "python-jupyter-client" ; Jupyter protocol implementation and client libraries ; (daym) required by emacs-jupyter (for no reason; why not just invoke "jupyter kernel"?)
         "emacs-jupyter" ; Emacs interface to communicate with Jupyter kernels
         "emacs-elixir-mode" ; ajor mode for editing Elixir files
-        "emacs-guix" ; Emacs interface for GNU Guix
+        ; "emacs-guix" ; Emacs interface for GNU Guix
         "emacs-bluetooth" ; Manage Bluetooth devices using Emacs
         "emacs-osm"; OpenStreetMap viewer for Emacs
         "emacs-erc-hl-nicks" ; Nickname highlighting for Emacs ERC
@@ -187,7 +255,8 @@
         ; (daym) Shows number of search results in status bar
         "emacs-anzu" ; Show number of matches in mode-line while searching 
         "emacs-dired-rsync" ; Support for rsync from Emacs dired buffers 
-        "emacs-dockerfile-mode" ; Major mode for editing Dockerfile 
+        "emacs-dockerfile-mode" ; Major mode for editing Dockerfile
+        "emacs-swiper" ; Isearch with an overview
         "emacs-emacsql" ; Emacs high-level SQL database front-end 
         ; "emacs-helm-cider" ; Helm interface to Clojure's CIDER 
         ; (daym) TODO emacs-graphviz-dot-mode
@@ -224,7 +293,10 @@
         "emacs-org-pandoc-import" ; Read and edit non-Org file types in Org 
         "emacs-org-auto-tangle" ; Automatically tangle code blocks on save 
         "emacs-howm" ; Note-taking tool for Emacs 
-        "emacs-pdf-tools" ; Emacs support library for PDF files 
+        "emacs-pdf-tools" ; Emacs support library for PDF files
+        "emacs-ripgrep" ; Search using ripgrep from inside Emacs
+        "emacs-deadgrep" ; Frontend for `ripgrep'
+        "emacs-hydra" ; Make Emacs bindings that stick around
 
 
 
