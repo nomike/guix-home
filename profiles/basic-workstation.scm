@@ -8,6 +8,6 @@
   (append
    basic-shell-tools-packages
    emacs-packages
-   progamming ;; TODO: Move to developer-workstation once the issue is fixed
+   programming-packages ;; TODO: Move to developer-workstation once the issue is fixed
    )
   )
