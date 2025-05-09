@@ -107,6 +107,9 @@ file prettification."))))
         "emacs-form-feed" ; Display ^L glyphs as horizontal lines
         "emacs-next-pgtk" ; Emacs text editor with pgtk frames
         "emacs-paredit" ; Emacs minor mode for editing parentheses
+        "emacs-minimap" ; Sidebar showing a _mini-map_ of a buffer
+        "emacs-buffer-move" ; emacs-buffer-move
+        "emacs-modus-themes" ; Accessible themes for Emacs (WCAG AAA standard)
         "emacs-evil-paredit" ; Evil extension to integrate nicely with Paredit
         "emacs-indent-bars" ; Highlight indentation with bars
         "emacs-crdt" ; Real-time collaborative editing environment
@@ -164,10 +167,11 @@ file prettification."))))
         "emacs-shackle" ; Enforce rules for popups 
         "emacs-envrc" ; Support for Direnv which operates buffer-locally 
         ; (daym) Understands guix.scm and manifest.scm natively
-        "emacs-buffer-env" ; Create buffer-local process environments 
+        "emacs-buffer-env" ; Create buffer-local process environments
+        "emacs-buffer-move" ; Functions for moving Emacs' buffers around
         "emacs-flycheck-guile" ; GNU Guile support for Flycheck
         "emacs-scad-mode" ; Emacs major mode for editing editing OpenSCAD code 
-        "scad-dbus" ; Control OpenSCAD from Emacs using D-Bus
+        ;; "scad-dbus" ; Control OpenSCAD from Emacs using D-Bus
         "emacs-geiser-guile" ; Guile Scheme support for Geiser
         "emacs-parinfer-rust-mode" ; Lisp structure editing mode leveraging Parinfer Rust
         ; "emacs-parinfer-mode" ; Lisp structure editing mode
