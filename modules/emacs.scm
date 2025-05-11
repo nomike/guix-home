@@ -301,7 +301,7 @@ file prettification."))))
         "emacs-ripgrep" ; Search using ripgrep from inside Emacs
         "emacs-deadgrep" ; Frontend for `ripgrep'
         "emacs-hydra" ; Make Emacs bindings that stick around
-
+        "emacs-exec-path-from-shell" ; Get environment variables such as `PATH' from the shell
 
 
                                         ; I adapt it (package-with-emacs-pgtk (specification->package "emacs-combobulate"))
