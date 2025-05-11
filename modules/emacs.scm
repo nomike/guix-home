@@ -170,7 +170,7 @@ file prettification."))))
         "emacs-buffer-env" ; Create buffer-local process environments
         "emacs-buffer-move" ; Functions for moving Emacs' buffers around
         "emacs-flycheck-guile" ; GNU Guile support for Flycheck
-        "emacs-scad-mode" ; Emacs major mode for editing editing OpenSCAD code 
+        ;; "emacs-scad-mode" ; Emacs major mode for editing editing OpenSCAD code 
         ;; "scad-dbus" ; Control OpenSCAD from Emacs using D-Bus
         "emacs-geiser-guile" ; Guile Scheme support for Geiser
         "emacs-parinfer-rust-mode" ; Lisp structure editing mode leveraging Parinfer Rust
