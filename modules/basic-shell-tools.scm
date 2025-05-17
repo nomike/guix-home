@@ -13,27 +13,27 @@
      ;; "ansible" ; currently broken due to locales
      ;; "ansible-lint" ; no such package 
      ;; "audacity" ; 
-     "cabextract" ; 
-     "cmake" ; 
-     "curl" ; 
-     "daemonize" ; 
-     "dconf-editor" ; 
-     "diffstat" ; 
-     "diffutils" ; 
-     "dos2unix" ; 
-     "dosfstools" ; 
+     "cabextract"              ; 
+     "cmake"                   ; 
+     "curl"                    ; 
+     "daemonize"               ; 
+     "dconf-editor"            ; 
+     "diffstat"                ; 
+     "diffutils"               ; 
+     "dos2unix"                ; 
+     "dosfstools"              ; 
      ;; "easy-rsa" ; no such package
      ;; "element-desktop" ; 
      ;; "emacs" ; 
      ;; "exfat-fuse" ; no such package
-     "exfatprogs" ; 
-     "feh" ; 
+     "exfatprogs"              ; 
+     "feh"                     ; 
      ;; "finger" ; no such package
      ;; "flatpak" ; 
      ;; "fonts-liberation" ; no such package
      ;; "fonts-powerline" ; no such package
-     "gdb" ; 
-     "ddrescue" ; 
+     "gdb"                              ; 
+     "ddrescue"                         ; 
      ;; "gimp" ; 
      "git"
      "git:gui"
@@ -52,12 +52,12 @@
      ;; "handbrake" ; 
      ;; "handbrake-cli" ; 
      ;; "hexchat" ; 
-     "htop" ;
+     "htop"   ;
      ;; "intel-one-mono" ; Expressive monospaced font family 
-     "httping" ; 
+     "httping"         ; 
      ;; "inkscape" ; 
      ;; "ipython3" ; 
-     "jq" ; 
+     "jq"              ; 
      ;; "jupp" ; no such package
      ;; "keepass2" ; 
      ;; "landscape-common" ; 
@@ -65,20 +65,20 @@
      ;; "libimage-exiftool-perl" ; no such package
      ;; "libreoffice-java-common" ; 
      ;; "logstalgia" ; 
-     "meld" ; Compare files, directories and working copies
-     "mc" ; 
-     "minicom" ; 
+     "meld"            ; Compare files, directories and working copies
+     "mc"              ; 
+     "minicom"         ; 
      ;; "mono-complete" ; 
      ;; "mplayer" ; 
-     "mtools" ; 
-     "mumi" ; 
+     "mtools"                        ; 
+     "mumi"                          ; 
      ;; "ncal" ; no such packeter
-     "ncdu" ; 
-     "net-tools" ; 
-     "nmap" ; 
+     "ncdu"                          ; 
+     "net-tools"                     ; 
+     "nmap"                          ; 
      ;; "npm" ; 
-     "nss-certs" ;
-     ;; "openscad-nightly" ; 
+     "nss-certs"                     ;
+     ;; "openscad" ; 
      ;; "openjdk-11-jdk" ; 
      ;; "openjdk-11-jre" ; 
      ;; "openjdk-17-jdk" ; 
@@ -86,12 +86,12 @@
      ;; "openshot-qt" ; 
      ;; "openssh-server" ; 
      ;; "p7zip-full" ; 
-     "pavucontrol" ; 
+     "pavucontrol"                   ; 
      ;; "pipx" ; 
      ;; "playonlinux" ; 
      ;; "plocate" ; 
      ;; "printer-driver-gutenprint" ; 
-     "pwgen" ; 
+     "pwgen"   ; 
      ;; "python3-autopep8" ; 
      ;; "python3-crcmod" ; 
      ;; "python3-docopt" ; 
@@ -102,34 +102,31 @@
      ;; "rpi-imager" ;
      "ripgrep" ; Line-oriented search tool and Rust successor to `grep'
      "screen" ; Full-screen window manager providing multiple terminals
-     "sl" ; 
+     "sl"     ; 
      ;; "smartmontools" ; 
-     "socat" ; 
+     "socat"                        ; 
      ;; "solaar" ; 
-     "sox" ; 
+     "sox"                          ; 
      ;; "ssh-askpass-gnome" ; 
-     "sshfs" ; 
+     "sshfs"                        ; 
      ;; "syncthing" ; 
      ;; "system-config-printer" ; 
-     "tcpdump" ; 
-     "thefuck" ; 
-     "tig" ; 
-     "trash-cli" ; 
+     "tcpdump"                      ; 
+     "thefuck"                      ; 
+     "tig"                          ; 
+     "trash-cli"                    ; 
      ;; "ttf-mscorefonts-installer" ; 
      ;; "udisks2" ; 
-     "unzip" ; 
+     "unzip"                        ; 
      ;; "virt-manager" ; 
      ;; "vlc" ; 
      ;; "vorta" ; 
-     "wget" ; 
-     "whois" ; 
+     "wget"                         ; 
+     "whois"                        ; 
      ;; "wireshark" ; 
-     "xclip" ; 
+     "xclip"                        ; 
      ;; "yamllint" ; no such package
-     "yt-dlp" ; 
-     "zsh" ; 
+     "yt-dlp"                       ; 
+     "zsh"                          ; 
      ;; "zsh-antigen" ; no such package
-     )
-    )
-   )
-  )
+     ))))
