@@ -44,9 +44,9 @@
 
 
 (define-public openscad
-  (let ((commit "72c9919d63116f8e711f3566ae34e9eb63a2d6e6")
-        (version "2025.05.08")
-        (revision "1"))
+  (let ((commit "c76900f9a62fcb98c503dcc5ccce380db8ac564b")
+        (version "2025.05.17")
+        (revision "0"))
     (package
       (name "openscad")
       (version (git-version version revision commit))
@@ -58,7 +58,7 @@
                (commit commit)
                (recursive? #t)))
          (sha256
-          (base32 "077x7s3z65mz6rnrzan3qn06045d2fkqnd6ss6ibw1fhlaypzfbf"))
+          (base32 "1f79kidx82jfi2dh3j7dibar04jbzan2s5c58i9hbfl1kx7zqvs7"))
          (file-name (git-file-name name version))))
       (build-system qt-build-system)
       (arguments
