@@ -151,6 +151,7 @@ file prettification."))))
         "emacs-beacon" ; Emacs minor mode creating a light that follows your cursor around 
         "emacs-bar-cursor" ; Bar cursor shape 
         "emacs-wakib-keys" ; Make C-c, C-v and C-x clipboard keys work reliably in Emacs 
+        "emacs-saveplace-pdf-view" ; Save place in pdf-view buffers for Emacs
   ;               ; (daym) Alternative: emacs-dape
         "emacs-tramp" ; Remote file editing package for Emacs ; (daym) I think that's part of emacs now
         "emacs-treemacs" ; Emacs tree style file explorer
