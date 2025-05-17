@@ -43,8 +43,9 @@
      ;; "gnome-shell-extension-manager" ; 
      ;; "gnome-software" ; 
      ;; "gnome-tweaks" ; 
-     ;; "gnome-weather" ; 
-     ;; "google-android-platform-tools-installer" ; 
+     ;; "gnome-weather" ;
+     "gnupg" ; GNU Privacy Guard
+     ;; "google-android-platform-tools-installer" ;
      ;; "gparted" ; 
      ;; "graphicsmagick-imagemagick-compat" ; no such package
      ;; "guake" ; no such package
@@ -64,7 +65,7 @@
      ;; "libfuse2" ; no such package
      ;; "libimage-exiftool-perl" ; no such package
      ;; "libreoffice-java-common" ; 
-     ;; "logstalgia" ; 
+     ;; "logstalgia" ;
      "meld"            ; Compare files, directories and working copies
      "mc"              ; 
      "minicom"         ; 
