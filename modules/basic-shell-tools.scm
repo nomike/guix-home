@@ -46,7 +46,7 @@
      ;; "gnome-weather" ;
      "gnupg" ; GNU Privacy Guard
      ;; "google-android-platform-tools-installer" ;
-     ;; "gparted" ; 
+     "gparted" ; 
      ;; "graphicsmagick-imagemagick-compat" ; no such package
      ;; "guake" ; no such package
      ;; "guix" ; 
