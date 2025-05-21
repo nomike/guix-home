@@ -114,7 +114,8 @@
      ;; "system-config-printer" ; 
      "tcpdump"                      ; 
      "thefuck"                      ; 
-     "tig"                          ; 
+     "tig"                          ;
+     "tmux" ; Terminal multiplexer
      "trash-cli"                    ; 
      ;; "ttf-mscorefonts-installer" ; 
      ;; "udisks2" ; 
