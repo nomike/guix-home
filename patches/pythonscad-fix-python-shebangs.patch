@@ -1,0 +1,88 @@
+From e462504355cbdf2fa27172679b5c514f8bfda46c Mon Sep 17 00:00:00 2001
+From: nomike <nomike@nomike.com>
+Date: Wed, 21 May 2025 00:36:39 +0200
+Subject: [PATCH] Use python3 in shebang
+
+---
+ tests/export_import_pngtest.py | 2 +-
+ tests/export_pngtest.py        | 2 +-
+ tests/mingw_convert_ctest.py   | 2 +-
+ tests/shouldfail.py            | 2 +-
+ tests/stlexportsanitytest.py   | 2 +-
+ tests/test_cmdline_tool.py     | 2 +-
+ tests/test_pretty_print.py     | 2 +-
+ 7 files changed, 7 insertions(+), 7 deletions(-)
+
+diff --git a/tests/export_import_pngtest.py b/tests/export_import_pngtest.py
+index 9c472d41e..8429a66ec 100644
+--- a/tests/export_import_pngtest.py
++++ b/tests/export_import_pngtest.py
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/env python3
+ 
+ # Export-import test
+ #
+diff --git a/tests/export_pngtest.py b/tests/export_pngtest.py
+index 5dec5791f..1f13f455a 100644
+--- a/tests/export_pngtest.py
++++ b/tests/export_pngtest.py
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/env python3
+ 
+ # Export test
+ #
+diff --git a/tests/mingw_convert_ctest.py b/tests/mingw_convert_ctest.py
+index 0b93280f9..6f02dec42 100644
+--- a/tests/mingw_convert_ctest.py
++++ b/tests/mingw_convert_ctest.py
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/env python3
+ 
+ #
+ # Mingw_x_testfile - convert paths in CTestTestfile.cmake so they work 
+diff --git a/tests/shouldfail.py b/tests/shouldfail.py
+index d9b5db566..5e824fbdd 100644
+--- a/tests/shouldfail.py
++++ b/tests/shouldfail.py
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/env python3
+ 
+ # Test expected failure
+ #
+diff --git a/tests/stlexportsanitytest.py b/tests/stlexportsanitytest.py
+index e8dafd438..3a2166f78 100755
+--- a/tests/stlexportsanitytest.py
++++ b/tests/stlexportsanitytest.py
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/env python3
+ 
+ # STL sanity checker
+ #
+diff --git a/tests/test_cmdline_tool.py b/tests/test_cmdline_tool.py
+index 7e7508c51..00be21865 100755
+--- a/tests/test_cmdline_tool.py
++++ b/tests/test_cmdline_tool.py
+@@ -1,4 +1,4 @@
+-#!/usr/bin/python
++/usr/bin/env python3
+ #
+ # Regression test driver for cmd-line tools
+ #
+diff --git a/tests/test_pretty_print.py b/tests/test_pretty_print.py
+index 371d290b6..1cd2e5782 100644
+--- a/tests/test_pretty_print.py
++++ b/tests/test_pretty_print.py
+@@ -1,4 +1,4 @@
+-#!/usr/bin/python
++/usr/bin/env python3
+ 
+ # test_pretty_print by don bright 2012. Copyright assigned to Marius Kintel and
+ # Clifford Wolf 2012. Released under the GPL 2, or later, as described in
+-- 
+2.49.0
+
