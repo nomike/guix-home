@@ -56,10 +56,10 @@
      "htop"   ;
      ;; "intel-one-mono" ; Expressive monospaced font family 
      "httping"         ; 
-     ;; "inkscape" ; 
+     "inkscape" ; 
      ;; "ipython3" ; 
      "jq"              ; 
-     ;; "jupp" ; no such package
+     "jupp" ; 
      ;; "keepass2" ; 
      ;; "landscape-common" ; 
      ;; "libfuse2" ; no such package
