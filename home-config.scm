@@ -2,6 +2,7 @@
   #:use-module (gnu home)
   #:use-module (gnu packages base)
   #:use-module (packages openscad)
+  #:use-module (packages pythonscad)
   #:use-module (roles scrooge)
   )
 
@@ -10,7 +11,9 @@
  (packages
   (append
    scrooge-packages
-   (list openscad)
+   (list
+  ;  openscad
+   pythonscad)
    )
   )
  )
