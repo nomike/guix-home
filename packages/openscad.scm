@@ -12,6 +12,7 @@
   #:use-module (gnu packages xml)
   #:use-module (gnu packages libcanberra)
   #:use-module (gnu packages engineering)
+  #:use-module (gnu packages image)
   #:use-module (gnu packages imagemagick)
   #:use-module (gnu packages libusb)
   #:use-module (gnu packages multiprecision)
