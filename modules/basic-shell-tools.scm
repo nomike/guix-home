@@ -12,7 +12,7 @@
     (list
      ;; "ansible" ; currently broken due to locales
      ;; "ansible-lint" ; no such package 
-     ;; "audacity" ; 
+     "audacity" ; 
      "cabextract"              ; 
      "cmake"                   ; 
      "curl"                    ; 
