@@ -121,7 +121,8 @@
      "unzip"                        ; 
      ;; "virt-manager" ; 
      ;; "vlc" ; 
-     ;; "vorta" ; 
+     ;; "vorta" ;
+     "waypipe" ; Proxy for Wayland protocol applications
      "wget"                         ; 
      "whois"                        ; 
      ;; "wireshark" ; 
