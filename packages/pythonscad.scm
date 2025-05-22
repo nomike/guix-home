@@ -54,7 +54,7 @@
    (package
     (inherit openscad)
     (name "pythonscad")
-    (version (git-version "0.0.0" revision commit))
+    (version (git-version version revision commit))
     (source
      (origin
       (method git-fetch)
