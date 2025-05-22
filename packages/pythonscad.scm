@@ -48,7 +48,8 @@
   #:export (pythonscad))
 
 (define-public pythonscad
-  (let ((commit "39eb62366ef0f49a71d2d6e63441424e75c74690")
+  (let ((commit "b856456fcf26e089a616e5a9b5d685b8a8f2e2c1")
+        (version "2025.05.21")
         (revision "0"))
    (package
     (inherit openscad)
@@ -62,7 +63,7 @@
             (commit commit)
             (recursive? #t)))
       (sha256
-       (base32 "0g83nvf96yhy7c5sx7wfpfkyapx6ab9hjsvdq5x061bhp83ivp3z"))
+       (base32 "0bjpvj94m3kplpnmnlai7mjx45d5acnqw943w3p1mprg8wrp3ap6"))
       (patches (search-patches "patches/pythonscad-fix-python-shebangs.patch"))
       (file-name (git-file-name name version))))
     (arguments
