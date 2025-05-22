@@ -64,7 +64,6 @@
             (recursive? #t)))
       (sha256
        (base32 "0bjpvj94m3kplpnmnlai7mjx45d5acnqw943w3p1mprg8wrp3ap6"))
-      (patches (search-patches "patches/pythonscad-fix-python-shebangs.patch"))
       (file-name (git-file-name name version))))
     (arguments
        (list
