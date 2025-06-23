@@ -112,7 +112,8 @@
      "sshfs"                        ; 
      ;; "syncthing" ; 
      ;; "system-config-printer" ; 
-     "tcpdump"                      ; 
+     "tcpdump"                      ;
+     "telegram-desktop" ; Telegram Desktop
      "thefuck"                      ; 
      "tig"                          ;
      "tmux" ; Terminal multiplexer
