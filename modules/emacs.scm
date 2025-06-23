@@ -283,7 +283,7 @@ file prettification."))))
                                         ; "mu" ; Quickly find emails ; (daym) maildir indexer, mu4e
        "pandoc" ; Conversion between markup formats
        "python-jupyter-client" ; Jupyter protocol implementation and client libraries ; (daym) required by emacs-jupyter (for no reason; why not just invoke "jupyter kernel"?)
-       "scad-dbus" ; Control OpenSCAD from Emacs using D-Bus
+       ; "scad-dbus" ; Control OpenSCAD from Emacs using D-Bus
        "tree-sitter-tlaplus" ; Tree-sitter TLA+ grammar 
                                         ; "macs-org-roam" ; Non-hierarchical note-taking with Org mode
 
