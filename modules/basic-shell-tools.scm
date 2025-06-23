@@ -17,7 +17,8 @@
      "cmake"                   ; 
      "curl"                    ; 
      "daemonize"               ; 
-     "dconf-editor"            ; 
+     "dconf-editor"            ;
+     "diffoscope" ; Compare files, archives, and directories in depth
      "diffstat"                ; 
      "diffutils"               ; 
      "dos2unix"                ; 
