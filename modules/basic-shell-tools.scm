@@ -35,7 +35,7 @@
      ;; "fonts-powerline" ; no such package
      "gdb"                              ; 
      "ddrescue"                         ; 
-     "gimp" ; 
+     ;; "gimp" ; 
      "git"
      "git:gui"
      "git:send-email"
