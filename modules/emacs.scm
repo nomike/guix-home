@@ -106,6 +106,8 @@ file prettification."))))
        "emacs-casual-info" ; Transient-based porcelain for info reader
        "emacs-chatgpt-shell" ; ChatGPT and DALL-E Emacs shells and Org Babel libraries
        "emacs-cider" ; Clojure development environment for Emacs ; (daym) For Clojure. Supports light table via M-x cider-enlighten-mode
+       "emacs-cmake-font-lock" ; Advanced type-aware syntax-highlighting for CMake
+       "emacs-cmake-mode" ; Emacs major mode for editing Cmake expressions
        "emacs-code-cells" ; Emacs utilities for code split into cells, including Jupyter notebooks
        "emacs-color-theme-solarized" ; Solarized color scheme for Emacs
        "emacs-comment-tags" ; Minor mode to show comments which have tags like TODO 
