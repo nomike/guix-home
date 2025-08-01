@@ -14,7 +14,7 @@
      ;; "ansible-lint" ; no such package 
      "audacity" ; 
      "cabextract"              ; 
-     "cmake"                   ; 
+    ;  "cmake"                   ; 
      "curl"                    ; 
      "daemonize"               ; 
      "dconf-editor"            ;
