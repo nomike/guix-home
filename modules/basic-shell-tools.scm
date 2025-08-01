@@ -2,8 +2,8 @@
   #:use-module (gnu home)
   #:use-module (gnu packages)
   #:use-module (gnu services)
-  #:use-module (guix transformations)
-  #:export (basic-shell-tools-packages))
+  #:use-module (my-packages)
+  #:use-module (guix transformations))
 
 
 (define-public basic-shell-tools-packages
@@ -15,7 +15,7 @@
      "audacity" ; 
      "cabextract"              ; 
     ;  "cmake"                   ; 
-     "curl"                    ; 
+    ;  "curl"                    ; 
      "daemonize"               ; 
      "dconf-editor"            ;
      "diffoscope" ; Compare files, archives, and directories in depth
@@ -35,11 +35,12 @@
      ;; "fonts-powerline" ; no such package
      "gdb"                              ; 
      "ddrescue"                         ; 
-     ;; "gimp" ; 
+     "gimp" ; 
      "git"
      "git:gui"
      "git:send-email"
-     ;; "gitk" ; 
+     ;; "gitk" ;
+     "glew"
      ;; "gnome-browser-connector" ; 
      ;; "gnome-shell-extension-manager" ; 
      ;; "gnome-software" ; 
@@ -61,7 +62,7 @@
      ;; "ipython3" ; 
      "jq"              ; 
      "jupp" ; 
-     ;; "keepass2" ; 
+     "keepass" ; Light-weight and easy-to-use password manager
      ;; "landscape-common" ; 
      ;; "libfuse2" ; no such package
      ;; "libimage-exiftool-perl" ; no such package
@@ -80,7 +81,7 @@
      "nmap"                          ; 
      ;; "npm" ; 
      "nss-certs"                     ;
-     ;; "openscad" ; 
+    ;  "openscad" ; 
      ;; "openjdk-11-jdk" ; 
      ;; "openjdk-11-jre" ; 
      ;; "openjdk-17-jdk" ; 
