@@ -6,8 +6,7 @@
     #:use-module (guix gexp)
     #:use-module (gnu packages emacs)
     #:use-module (gnu services)
-    #:use-module (guix transformations)
-    #:export (emacs-packages))
+    #:use-module (guix transformations))
 
 (define emacs-guix
         (specification->package "emacs-guix"))
