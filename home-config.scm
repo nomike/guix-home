@@ -8,5 +8,4 @@
   (packages
    (append
     scrooge-packages
-    (list
-     ))))
+    (list))))
