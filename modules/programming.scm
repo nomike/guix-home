@@ -2,9 +2,7 @@
   #:use-module (gnu home)
   #:use-module (gnu packages)
   #:use-module (gnu services)
-  #:use-module (guix transformations)
-  #:export (programming-packages)
-  )
+  #:use-module (guix transformations))
 
 (define-public programming-packages
   (append 
