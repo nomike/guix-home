@@ -97,9 +97,7 @@ file prettification."))))
         ; "emacs-alchemist" ; Elixir tooling integration into Emacs
         "emacs-code-cells" ; Emacs utilities for code split into cells, including Jupyter notebooks
         "emacs-password-generator" ; Generate passwords inside Emacs
-        "emacs-casual-calc" ; Transient-based porcelain for calc
-        "emacs-casual-dired" ; Transient-based porcelain for Dired
-        "emacs-casual-info" ; Transient-based porcelain for info reader
+        "emacs-casual" ; Transient user interfaces for various modes
         "emacs-aio" ; Async/Await for Emacs Lisp
         "emacs-lsp-booster" ; Emacs LSP performance booster
         "emacs-undo-tree" ; Emacs LSP performance booster
