@@ -1,4 +1,4 @@
 .PHONY: reconfigure
 
 reconfigure:
-	guix home -L . reconfigure home-config.scm
+	GUILE_LOAD_PATH="${PWD}" guix home reconfigure home-config.scm
