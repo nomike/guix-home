@@ -2,7 +2,6 @@
   #:use-module (gnu home)
   #:use-module (gnu packages)
   #:use-module (gnu services)
-  #:use-module (my-packages)
   #:use-module (guix transformations))
 
 
