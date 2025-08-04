@@ -100,9 +100,7 @@ file prettification."))))
        "emacs-buffer-move" ; emacs-buffer-move
        "emacs-bui" ; Buffer interface library for Emacs ; (daym) Used by emacs-dap-mode
        "emacs-capf-autosuggest" ; `eshell' completion suggestions for Emacs 
-       "emacs-casual-calc" ; Transient-based porcelain for calc
-       "emacs-casual-dired" ; Transient-based porcelain for Dired
-       "emacs-casual-info" ; Transient-based porcelain for info reader
+       "emacs-casual" ; Transient user interfaces for various modes
        "emacs-chatgpt-shell" ; ChatGPT and DALL-E Emacs shells and Org Babel libraries
        "emacs-cider" ; Clojure development environment for Emacs ; (daym) For Clojure. Supports light table via M-x cider-enlighten-mode
        "emacs-cmake-font-lock" ; Advanced type-aware syntax-highlighting for CMake
