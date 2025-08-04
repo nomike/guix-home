@@ -239,7 +239,8 @@ file prettification."))))
         "emacs-discover-my-major" ; Discover key bindings for the current Emacs major mode 
         "emacs-which-key" ; Display available keybindings in popup 
         "emacs-auctex" ; Integrated environment for TeX 
-        "emacs-company-auctex" ; Completion for `AUCTeX' 
+        "emacs-company-auctex" ; Completion for `AUCTeX'
+	"emacs-powerline" ; Mode-line plugin for Emacs
         "emacs-latex-extra" ; Usability improvements for LaTeX mode 
         "emacs-adoc-mode" ; AsciiDoc mode for Emacs 
         "emacs-tempel" ; Simple templates for Emacs 
