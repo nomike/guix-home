@@ -12,4 +12,5 @@
      "tree-sitter-python" ; Tree-sitter Python grammar
      "tree-sitter-bash" ; Tree-sitter Bash grammar
      "tree-sitter-org" ; Tree-sitter Org grammar
+     "uncrustify" ; Code formatter for C and other related languages
      ))))
