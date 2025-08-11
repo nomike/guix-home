@@ -282,11 +282,18 @@ file prettification."))))
         ; (daym) or celluloid for gtk
         "emacs-mpv" ; Control MPV for easy note taking 
         "emacs-empv" ; Emacs multimedia player, media library manager, YouTube frontend 
-        ; emacs-ytel ; Youtube front-end for Emacs 
+        "emacs-ytel" ; Youtube front-end for Emacs
         "emacs-nov-el" ; Major mode for reading EPUBs in Emacs 
         "dvisvgm" ; Command-line utility for generating SVG from DVI, EPS and PDF files 
         "emacs-ztree" ; Directory tree comparison mode for Emacs 
-
+        "emacs-lsp-treemacs" ; Integration between LSP mode and treemacs
+        "emacs-dap-mode" ; Emacs client/library for Debug Adapter Protocol
+        "emacs-lsp-mode" ; Emacs client and library for the Language Server Protocol
+        "emacs-lsp-ui" ; User interface extensions for `lsp-mode'
+        "emacs-ccls" ; Emacs support for the `ccls' language server
+        "emacs-lsp-java" ; Java support for lsp-mode
+        "emacs-company-lsp" ; Completion for `lsp-mode'
+        "emacs-consult-lsp" ; LSP mode and Consult helping each other
         ; (daym) Guile IDE
         "emacs-arei" ; Asynchronous Reliable Extensible IDE 
         "guile-ares-rs" ; Asynchronous Reliable Extensible Sleek RPC Server for Guile 
@@ -372,3 +379,4 @@ file prettification."))))
     )
   )
 )
+
