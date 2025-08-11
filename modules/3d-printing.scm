@@ -9,6 +9,6 @@
   (append
    (specifications->packages
     (list
-     "pythonscad@0.0.0-0.e2641ca"    ; Script-based 3D modeling app whith Python suppo
+     "pythonscad"    ; Script-based 3D modeling app whith Python suppo
      "prusa-slicer"  ; G-code generator for 3D printers (RepRap, Makerbot, Ultimaker etc.)
      ))))
