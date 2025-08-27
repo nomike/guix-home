@@ -121,6 +121,7 @@
      "trash-cli"                    ; 
      ;; "ttf-mscorefonts-installer" ; 
      ;; "udisks2" ; 
+     "ungoogled-chromium-wayland" ; Graphical web browser
      "unzip"                        ; 
      ;; "virt-manager" ; 
      ;; "vlc" ; 
