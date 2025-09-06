@@ -14,4 +14,5 @@
      "tree-sitter-org" ; Tree-sitter Org grammar
      "uncrustify" ; Code formatter for C and other related languages
      "valgrind" ; Debugging and profiling tool suite
+     "cloc" ; Count source lines of code (SLOC) and other source code metrics
      ))))
