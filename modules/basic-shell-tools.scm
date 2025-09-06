@@ -4,6 +4,9 @@
   #:use-module (gnu services)
   #:use-module (guix transformations))
 
+(define patch-ytdlp-xhamster
+  (options->transformation `((with-patch . ,(string-append "yt-dlp="
+                                                           "patches/yt-dlp-xhamster.patch")))))
 
 (define-public basic-shell-tools-packages
   (append
@@ -132,7 +135,8 @@
      ;; "wireshark" ; 
      "xclip"                        ; 
      ;; "yamllint" ; no such package
-     "yt-dlp"                       ; 
      "zsh"                          ; 
      ;; "zsh-antigen" ; no such package
-     ))))
+     ))
+   (list
+    (patch-ytdlp-xhamster (specification->package "yt-dlp")))))
