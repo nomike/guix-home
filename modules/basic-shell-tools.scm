@@ -2,11 +2,22 @@
   #:use-module (gnu home)
   #:use-module (gnu packages)
   #:use-module (gnu services)
-  #:use-module (guix transformations))
+  #:use-module (guix transformations)
+  #:use-module (guix inferior)
+  #:use-module (guix channels)
+  #:use-module (srfi srfi-1))
 
 (define patch-ytdlp-xhamster
   (options->transformation `((with-patch . ,(string-append "yt-dlp="
                                                            "patches/yt-dlp-xhamster.patch")))))
+
+;; Define channels for old Guix version with working telegram-desktop
+;; https://codeberg.org/guix/guix/issues/2815
+(define telegram-channels
+  (list (channel
+         (name 'guix)
+         (url "https://git.guix.gnu.org/guix.git")
+         (commit "464c3b63401f213a13870146f4e592734972b54b"))))
 
 (define-public basic-shell-tools-packages
   (append
@@ -117,7 +128,7 @@
      ;; "syncthing" ; 
      ;; "system-config-printer" ; 
      "tcpdump"                      ;
-     "telegram-desktop" ; Telegram Desktop
+     ;; "telegram-desktop" ; Telegram Desktop - using inferior instead
      "thefuck"                      ; 
      "tig"                          ;
      "tmux" ; Terminal multiplexer
@@ -139,4 +150,8 @@
      ;; "zsh-antigen" ; no such package
      ))
    (list
-    (patch-ytdlp-xhamster (specification->package "yt-dlp")))))
+    (patch-ytdlp-xhamster (specification->package "yt-dlp"))
+    ;; Get telegram-desktop from older Guix version
+    ;; https://codeberg.org/guix/guix/issues/2815
+    (let ((inferior (inferior-for-channels telegram-channels)))
+      (first (lookup-inferior-packages inferior "telegram-desktop")))))))
