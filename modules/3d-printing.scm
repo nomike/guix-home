@@ -7,8 +7,9 @@
 
 (define-public 3d-printing-packages
   (append
-   (specifications->packages
-    (list
-     "pythonscad"    ; Script-based 3D modeling app whith Python suppo
-     "prusa-slicer"  ; G-code generator for 3D printers (RepRap, Makerbot, Ultimaker etc.)
-     ))))
+    (specifications->packages
+      (list
+        "pythonscad" ; Script-based 3D modeling app whith Python suppo
+        "openscad" ; Script-based 3D modeling app
+        ;  "prusa-slicer"  ; G-code generator for 3D printers (RepRap, Makerbot, Ultimaker etc.)
+        ))))
