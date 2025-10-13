@@ -115,8 +115,9 @@
      ;; "python3-venv" ; 
      ;; "python3-virtualenv" ; 
      ;; "qdirstat" ; 
-     ;; "rpi-imager" ;
+     "rename" ; Perl extension for renaming multiple files
      "ripgrep" ; Line-oriented search tool and Rust successor to `grep'
+     ;; "rpi-imager" ;
      "screen" ; Full-screen window manager providing multiple terminals
      "sl"     ; 
      ;; "smartmontools" ; 
@@ -146,11 +147,12 @@
      ;; "wireshark" ; 
      "xclip"                        ; 
      ;; "yamllint" ; no such package
+     "yt-dlp"
      "zsh"                          ; 
      ;; "zsh-antigen" ; no such package
      ))
    (list
-    (patch-ytdlp-xhamster (specification->package "yt-dlp"))
+    ; (patch-ytdlp-xhamster (specification->package "yt-dlp"))
     ;; Get telegram-desktop from older Guix version
     ;; https://codeberg.org/guix/guix/issues/2815
     (let ((inferior (inferior-for-channels telegram-channels)))
