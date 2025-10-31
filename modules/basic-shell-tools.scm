@@ -147,7 +147,7 @@
      ;; "wireshark" ; 
      "xclip"                        ; 
      ;; "yamllint" ; no such package
-     "yt-dlp"
+    ;  "yt-dlp"
      "zsh"                          ; 
      ;; "zsh-antigen" ; no such package
      ))
