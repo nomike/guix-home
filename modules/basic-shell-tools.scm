@@ -92,6 +92,7 @@
      "ncdu"                          ; 
      "net-tools"                     ; 
      "nmap"                          ; 
+     "node"                          ; Evented I/O for V8 JavaScript
      ;; "npm" ; 
      "nss-certs"                     ;
     ;  "openscad" ; 
