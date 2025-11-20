@@ -8,6 +8,7 @@
   (append 
    (specifications->packages
     (list
+     "cppcheck" ; "Static C/C++ code analyzer"
      "tree-sitter-scheme" ; tree-sitter Scheme (R5RS, R6RS) grammar
      "tree-sitter-python" ; Tree-sitter Python grammar
      "tree-sitter-bash" ; Tree-sitter Bash grammar
