@@ -11,5 +11,5 @@
       (list
         "pythonscad" ; Script-based 3D modeling app whith Python suppo
         "openscad" ; Script-based 3D modeling app
-        ;  "prusa-slicer"  ; G-code generator for 3D printers (RepRap, Makerbot, Ultimaker etc.)
+        "prusa-slicer"  ; G-code generator for 3D printers (RepRap, Makerbot, Ultimaker etc.)
         ))))
