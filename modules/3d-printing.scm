@@ -9,7 +9,8 @@
   (append
     (specifications->packages
       (list
-        "pythonscad" ; Script-based 3D modeling app whith Python suppo
+        "meshlab" ; 3D triangular mesh processing and editing software
         "openscad" ; Script-based 3D modeling app
         "prusa-slicer"  ; G-code generator for 3D printers (RepRap, Makerbot, Ultimaker etc.)
-        ))))
+        "pythonscad" ; Script-based 3D modeling app whith Python suppo
+       ))))
