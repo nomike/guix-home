@@ -135,7 +135,8 @@
      "tig"                          ;
      "tmux" ; Terminal multiplexer
      "trash-cli"                    ; 
-     ;; "ttf-mscorefonts-installer" ; 
+     ;; "ttf-mscorefonts-installer" ;
+     "tuxpaint" ; Drawing software for children
      ;; "udisks2" ; 
      "ungoogled-chromium-wayland" ; Graphical web browser
      "unzip"                        ; 
