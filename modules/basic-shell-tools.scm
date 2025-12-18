@@ -28,7 +28,7 @@
      "audacity" ; 
      "cabextract"              ; 
     ;  "cmake"                   ; 
-    ;  "curl"                    ; 
+     "curl"                    ; 
      "daemonize"               ; 
      "dconf-editor"            ;
      "diffoscope" ; Compare files, archives, and directories in depth
