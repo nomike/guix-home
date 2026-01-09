@@ -152,6 +152,9 @@
     ;  "yt-dlp"
      "zsh"                          ; 
      ;; "zsh-antigen" ; no such package
+
+
+     "mpv" ; Audio and video player
      ))
    (list
     ; (patch-ytdlp-xhamster (specification->package "yt-dlp"))
