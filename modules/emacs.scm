@@ -72,10 +72,6 @@ file prettification."))))
   (options->transformation `((with-patch . ,(string-append "emacs-lsp-mode="
                                                            "patches/lsp-mode.patch")))))
 
-(define emacs-spacious-padding-patch
-  (options->transformation `((with-patch . ,(string-append "emacs-spacious-padding="
-                                                           "patches/emacs-spacious-padding.patch")))))
-
 (define-public emacs-packages
   (append
    ;; (list
@@ -310,6 +306,7 @@ file prettification."))))
         "emacs-deadgrep" ; Frontend for `ripgrep'
         "emacs-hydra" ; Make Emacs bindings that stick around
         "emacs-exec-path-from-shell" ; Get environment variables such as `PATH' from the shell
+        "emacs-spacious-padding" ; Increase the padding or spacing of frames and windows
 
 
                                         ; I adapt it (package-with-emacs-pgtk (specification->package "emacs-combobulate"))
@@ -362,20 +359,6 @@ file prettification."))))
                                         ; similar: (package-with-emacs-pgtk (specification->package "emacs-gnosis"))
 
       )
-    )
-    (list
-        (emacs-spacious-padding-patch (specification->package "emacs-spacious-padding")) ; Increase the padding or spacing of frames and windows
-        ; (daym) Used by emacs-dap-mode
-        ; (patch2 (specification->package "emacs-lsp-treemacs")) ; Integration between LSP mode and treemacs 
-        ; (patch2 (specification->package "emacs-dap-mode")) ; Emacs client/library for Debug Adapter Protocol 
-        ; (patch2 (specification->package "emacs-lsp-mode")) ; Emacs client and library for the Language Server Protocol
-        ; (patch2 (specification->package "emacs-lsp-ui")) ; User interface extensions for `lsp-mode'
-        ; (daym) doesn't work emacs-lsp-docker
-        ; (daym) part of emacs since emacs 29 emacs-csharp-mode
-        ; (patch2 (specification->package "emacs-ccls")) ; Emacs support for the `ccls' language server ;  C LSP; conflicts with our patched dap-mode
-        ; (patch2 (specification->package "emacs-lsp-java")) ; Java support for lsp-mode ; (daym) conflicts with our patched dap-mode
-        ; (patch2 (specification->package "emacs-company-lsp")) ; Completion for `lsp-mode' 
-        ; (patch2 (specification->package "emacs-consult-lsp")) ; (daym) gcc 4.9 build failure
     )
   )
 )
