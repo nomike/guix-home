@@ -25,6 +25,7 @@
     (list
      ;; "ansible" ; currently broken due to locales
      ;; "ansible-lint" ; no such package 
+     "asciinema" ; Terminal session recorder
      "audacity" ; 
      "cabextract"              ; 
     ;  "cmake"                   ; 
