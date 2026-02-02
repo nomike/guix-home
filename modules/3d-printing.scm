@@ -8,7 +8,7 @@
         ; "meshlab" ; 3D triangular mesh processing and editing software
         "openscad" ; Script-based 3D modeling app
         ; "prusa-slicer"  ; G-code generator for 3D printers (RepRap, Makerbot, Ultimaker etc.)
-        "pythonscad" ; Script-based 3D modeling app with Python support
+        ; "pythonscad" ; Script-based 3D modeling app with Python support
        ))
     (list
       prusa-slicer)))
