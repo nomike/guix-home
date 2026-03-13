@@ -8,9 +8,11 @@
   (append
    (specifications->packages
     (list
-     "cppcheck" ; "Static C/C++ code analyzer"
-     "cloc" ; Count source lines of code (SLOC) and other source code metrics
-     "just" ; Command runner
+    "cloc" ; Count source lines of code (SLOC) and other source code metrics
+    "cppcheck" ; "tatic C/C++ code analyzer
+    "itstool" ; Tool to translate XML documents with PO files
+    "jupyter" ; Web application for interactive documents
+    "just" ; Command runner
      "tree-sitter-scheme" ; tree-sitter Scheme (R5RS, R6RS) grammar
      "tree-sitter-python" ; Tree-sitter Python grammar
      "tree-sitter-bash" ; Tree-sitter Bash grammar
