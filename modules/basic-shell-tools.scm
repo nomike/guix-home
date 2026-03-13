@@ -7,14 +7,6 @@
   #:use-module (guix channels)
   #:use-module (srfi srfi-1))
 
-;; Define channels for old Guix version with working telegram-desktop
-;; https://codeberg.org/guix/guix/issues/2815
-(define telegram-channels
-  (list (channel
-         (name 'guix)
-         (url "https://git.guix.gnu.org/guix.git")
-         (commit "464c3b63401f213a13870146f4e592734972b54b"))))
-
 (define-public basic-shell-tools-packages
   (append
    (specifications->packages
@@ -154,7 +146,4 @@
      "mpv" ; Audio and video player
      ))
    (list
-    ;; Get telegram-desktop from older Guix version
-    ;; https://codeberg.org/guix/guix/issues/2815
-    (let ((inferior (inferior-for-channels telegram-channels)))
-      (first (lookup-inferior-packages inferior "telegram-desktop")))))))
+    ))))
