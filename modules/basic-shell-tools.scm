@@ -5,6 +5,7 @@
   #:use-module (guix transformations)
   #:use-module (guix inferior)
   #:use-module (guix channels)
+  #:use-module (packages keepass)
   #:use-module (srfi srfi-1))
 
 (define-public basic-shell-tools-packages
@@ -64,7 +65,7 @@
      ;; "ipython3" ; 
      "jq"              ; 
      "jupp" ; 
-     "keepass" ; Light-weight and easy-to-use password manager
+     ;; "keepass" ; Light-weight and easy-to-use password manager
      ;; "landscape-common" ; 
      ;; "libfuse2" ; no such package
      ;; "libimage-exiftool-perl" ; no such package
@@ -146,4 +147,4 @@
      "mpv" ; Audio and video player
      ))
    (list
-    ))))
+      keepass))))
