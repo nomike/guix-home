@@ -7,10 +7,6 @@
   #:use-module (guix channels)
   #:use-module (srfi srfi-1))
 
-(define patch-ytdlp-xhamster
-  (options->transformation `((with-patch . ,(string-append "yt-dlp="
-                                                           "patches/yt-dlp-xhamster.patch")))))
-
 ;; Define channels for old Guix version with working telegram-desktop
 ;; https://codeberg.org/guix/guix/issues/2815
 (define telegram-channels
@@ -158,7 +154,6 @@
      "mpv" ; Audio and video player
      ))
    (list
-    ; (patch-ytdlp-xhamster (specification->package "yt-dlp"))
     ;; Get telegram-desktop from older Guix version
     ;; https://codeberg.org/guix/guix/issues/2815
     (let ((inferior (inferior-for-channels telegram-channels)))
