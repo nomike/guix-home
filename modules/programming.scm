@@ -11,7 +11,7 @@
     "cloc" ; Count source lines of code (SLOC) and other source code metrics
     "cppcheck" ; "tatic C/C++ code analyzer
     "itstool" ; Tool to translate XML documents with PO files
-    "jupyter" ; Web application for interactive documents
+    ;; "jupyter" ; Web application for interactive documents
     "just" ; Command runner
      "tree-sitter-scheme" ; tree-sitter Scheme (R5RS, R6RS) grammar
      "tree-sitter-python" ; Tree-sitter Python grammar
