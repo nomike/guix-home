@@ -11,4 +11,5 @@
         ; "pythonscad" ; Script-based 3D modeling app with Python support
        ))
     (list
-      prusa-slicer)))
+      ;; prusa-slicer
+)))
