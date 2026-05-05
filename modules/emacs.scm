@@ -183,7 +183,7 @@ file prettification."))))
         "emacs-docker" ; anage docker from Emacs
         "emacs-dired-launch" ; emacs-dired-launch
         "emacs-chatgpt-shell" ; ChatGPT and DALL-E Emacs shells and Org Babel libraries
-        ; "dvisvgm" ; Command-line utility for generating SVG from DVI, EPS and PDF files ; (daym) TODO: Move that to manifest.scm of your project
+        ; "texlive-dvisvgm" ; Command-line utility for generating SVG from DVI, EPS and PDF files ; (daym) TODO: Move that to manifest.scm of your project
         ; (daym) obsolete in favor of integrated tramp-container
         ; "emacs-docker-tramp" ; TRAMP integration for docker containers
         "emacs-eat" ; Terminal emulator in Emacs
@@ -280,7 +280,7 @@ file prettification."))))
         "emacs-empv" ; Emacs multimedia player, media library manager, YouTube frontend 
         "emacs-ytel" ; Youtube front-end for Emacs
         "emacs-nov-el" ; Major mode for reading EPUBs in Emacs 
-        "dvisvgm" ; Command-line utility for generating SVG from DVI, EPS and PDF files 
+        "texlive-dvisvgm" ; Command-line utility for generating SVG from DVI, EPS and PDF files 
         "emacs-ztree" ; Directory tree comparison mode for Emacs 
         "emacs-lsp-treemacs" ; Integration between LSP mode and treemacs
         "emacs-dap-mode" ; Emacs client/library for Debug Adapter Protocol
