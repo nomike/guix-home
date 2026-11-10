@@ -31,7 +31,6 @@
                    "antigen bundle dircycle"
                    "antigen bundle command-not-found"
                    "antigen bundle common-aliases"
-                   "antigen bundle thefuck"
                    "antigen bundle zsh-users/zsh-syntax-highlighting"
                    "antigen bundle zsh-users/zsh-autosuggestions"
                    "antigen theme nomike/agnosterzak-ohmyzsh-theme agnosterzak"

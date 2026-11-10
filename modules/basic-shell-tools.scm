@@ -121,7 +121,6 @@
      ;; "system-config-printer" ; 
      "tcpdump"                      ;
      ;; "telegram-desktop" ; Telegram Desktop - using inferior instead
-     "thefuck"                      ; 
      "tig"                          ;
      "tmux" ; Terminal multiplexer
      "trash-cli"                    ; 
