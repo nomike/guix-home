@@ -1,10 +1,10 @@
-.PHONY: reconfigure dry-run
+.PHONY: reconfigure dry-run repl
 
 reconfigure:
-	GUILE_LOAD_PATH="${PWD}" guix home reconfigure home-config.scm
+	guix home reconfigure home-config.scm
 
 dry-run:
-	GUILE_LOAD_PATH="${PWD}" guix home reconfigure home-config.scm --dry-run
+	guix home reconfigure home-config.scm --dry-run
 
 repl:
-	GUILE_LOAD_PATH="${PWD}" guix repl home-config.scm
+	guix repl home-config.scm

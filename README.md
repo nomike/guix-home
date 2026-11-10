@@ -9,8 +9,10 @@ It is based on <https://github.com/daym/guix-config>.
 Install guix, clone this repo, navigate to that folder in a terminal and run:
 
 ```bash
-guix home -L "${PWD}" reconfigure home-config.scm
+guix home reconfigure home-config.scm
 ```
+
+`home-config.scm` adds this repository to Guile's load path, so local modules are found without `GUILE_LOAD_PATH` or `guix home -L`.
 
 ## Roles & Profiles
 
