@@ -147,4 +147,4 @@
      "mpv" ; Audio and video player
      ))
    (list
-      keepass))))
+      keepass)))
