@@ -117,8 +117,8 @@ file prettification."))))
         "emacs-pyvenv" ; Python virtual environment interface for Emacs
         ; (daym) For Lisp and Javascript; Note: emacs-sly is a fork
         "emacs-slime" ; Superior Lisp Interaction Mode for Emacs
-        "emacs-eldoc" ; Show function arglist or variable docstring in echo area
-        "emacs-xref" ; Cross-referencing commands ; TODO: emacs-xref-union
+        ;; "emacs-eldoc" ; Show function arglist or variable docstring in echo area
+        ;; "emacs-xref" ; Cross-referencing commands ; TODO: emacs-xref-union
         "emacs-sesman" ; Session manager for Emacs based IDEs
         ; "emacs-org-element" ; Seems to no longer exist ; (daym) tree
         "emacs-org-texlive-collection" ; Basic TeX Live packages for Org mode LaTeX export'
@@ -231,7 +231,7 @@ file prettification."))))
         "emacs-rainbow-delimiters" ; Highlight brackets according to their depth 
         ; (daym) What's the difference to which-key ??
         "emacs-discover-my-major" ; Discover key bindings for the current Emacs major mode 
-        "emacs-which-key" ; Display available keybindings in popup 
+        ;; "emacs-which-key" ; Display available keybindings in popup 
         "emacs-auctex" ; Integrated environment for TeX 
         "emacs-company-auctex" ; Completion for `AUCTeX'
 	"emacs-powerline" ; Mode-line plugin for Emacs
@@ -279,7 +279,7 @@ file prettification."))))
         "emacs-mpv" ; Control MPV for easy note taking 
         "emacs-empv" ; Emacs multimedia player, media library manager, YouTube frontend 
         "emacs-ytel" ; Youtube front-end for Emacs
-        "emacs-nov-el" ; Major mode for reading EPUBs in Emacs 
+        "emacs-nov" ; Major mode for reading EPUBs in Emacs 
         "texlive-dvisvgm" ; Command-line utility for generating SVG from DVI, EPS and PDF files 
         "emacs-ztree" ; Directory tree comparison mode for Emacs 
         "emacs-lsp-treemacs" ; Integration between LSP mode and treemacs
